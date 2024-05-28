@@ -168,27 +168,39 @@ const Sidebar = () => {
               </a>
 
               <ul>
-                <li className="">
-                  <a href="ru/refactoring/what-is-refactoring.html">
+                <li className={
+                    location.pathname.includes("refactoring")
+                      ? "featured menu-fs15 trail "
+                      : "featured menu-fs15"
+                  }>
+                  <a href="/refactoring/what-is-refactoring">
                     Tái cấu trúc là gì
                   </a>
 
                   <ul>
-                    <li className="">
-                      <a href="ru/refactoring/what-is-refactoring.html">
-                        Чистый код
+                    <li className={
+                    location.pathname.includes("what-is-refactoring")
+                      ? "featured menu-fs15 trail active"
+                      : "featured menu-fs15"
+                  }>
+                      <a href="/refactoring/what-is-refactoring">
+                        Mã Sạch
+                      </a>
+                    </li>
+                    <li className={
+                    location.pathname.includes("technical-debt")
+                      ? "featured menu-fs15 trail active"
+                      : "featured menu-fs15"
+                  }>
+                      <a href="/refactoring/technical-debt">
+                        Nợ kỹ thuật
                       </a>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/technical-debt.html">
-                        Технический долг
-                      </a>
+                      <a href="ru/refactoring/when.html">Khi nào cần tái cấu trúc</a>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/when.html">Когда рефакторить</a>
-                    </li>
-                    <li className="">
-                      <a href="ru/refactoring/how-to.html">Как рефакторить</a>
+                      <a href="ru/refactoring/how-to.html">Cách tái cấu trúc</a>
                     </li>
                   </ul>
                 </li>

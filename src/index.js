@@ -9,6 +9,8 @@ import StorePage from "./pages/Store";
 import BookPage from "./pages/Book";
 import CoursePage from "./pages/Course";
 import RefactoringPage from "./pages/Refactoring";
+import WhatIsRefactoringPage from "./pages/WhatIsRefactoring";
+import TechnicalDebtPage from "./pages/TechnicalDebt";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: "/refactoring",
     element: <RefactoringPage />,
+  },
+  {
+    path: "/refactoring/what-is-refactoring",
+    element: <WhatIsRefactoringPage />,
+  },
+  {
+    path: "/refactoring/technical-debt",
+    element: <TechnicalDebtPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
