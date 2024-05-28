@@ -11,6 +11,7 @@ import CoursePage from "./pages/Course";
 import RefactoringPage from "./pages/Refactoring";
 import WhatIsRefactoringPage from "./pages/WhatIsRefactoring";
 import TechnicalDebtPage from "./pages/TechnicalDebt";
+import WhenPage from "./pages/When";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/refactoring/technical-debt",
     element: <TechnicalDebtPage />,
+  },
+  {
+    path: "/refactoring/when",
+    element: <WhenPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

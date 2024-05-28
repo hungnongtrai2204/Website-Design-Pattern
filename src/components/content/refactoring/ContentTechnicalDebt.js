@@ -50,138 +50,144 @@ const ContentTechnicalDebt = () => {
               .
             </p>
             <p>
-            Nếu bạn vay tiền từ ngân hàng, điều này cho phép bạn mua hàng nhanh hơn. Bạn trả thêm để đẩy nhanh quá trình - bạn không chỉ trả số tiền gốc mà còn phải trả thêm lãi suất cho khoản vay. Khỏi phải nói, bạn thậm chí có thể tích lũy quá nhiều lãi đến mức số tiền lãi vượt quá tổng thu nhập của bạn, khiến việc trả nợ đầy đủ trở nên bất khả thi.
+              Nếu bạn vay tiền từ ngân hàng, điều này cho phép bạn mua hàng
+              nhanh hơn. Bạn trả thêm để đẩy nhanh quá trình - bạn không chỉ trả
+              số tiền gốc mà còn phải trả thêm lãi suất cho khoản vay. Khỏi phải
+              nói, bạn thậm chí có thể tích lũy quá nhiều lãi đến mức số tiền
+              lãi vượt quá tổng thu nhập của bạn, khiến việc trả nợ đầy đủ trở
+              nên bất khả thi.
             </p>
             <p>
-              Также, вы можете взять несколько кредитов одновременно. Более того
-              - вы можете набрать столько кредитов, что сумма процентов
-              перевесит ваш совокупный доход и сделает полное погашение
-              невозможным.
+              Điều tương tự cũng có thể xảy ra với mã nguồn. Bạn có thể tạm thời
+              tăng tốc mà không cần viết bài kiểm tra cho các tính năng mới,
+              nhưng điều này sẽ dần dần làm chậm tiến độ của bạn mỗi ngày cho
+              đến khi bạn cuối cùng phải trả hết "nợ" bằng cách viết các bài
+              kiểm tra.
             </p>
-            <p>
-              То же происходит и с кодом. Сегодня вы временно ускоритесь, не
-              написав тесты для новой фичи. Но каждый день пока эту фичу
-              приходится тестировать руками, замедляет ваш общий прогресс. В
-              какой-то момент, сумма этого времени превысит ту, которую вы бы
-              потратили на изначальное написание теста.
-            </p>
-            <h2>Причины появления технического долга</h2>
+            <h2>Nguyên nhân của nợ kỹ thuật</h2>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Давление со
-              стороны бизнеса
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Áp lực kinh
+              doanh
             </h4>
             <p>
-              Появляется когда бизнес заставляет выкатить фичи раньше, чем они
-              будут полностью доделаны. В этом случае, в коде появляются
-              заплатки и «костыли», которые скрывают недоделанные части проекта.
+              Đôi khi hoàn cảnh kinh doanh có thể buộc bạn phải tung ra các tính
+              năng trước khi chúng hoàn toàn hoàn thiện. Trong trường hợp này,
+              các bản vá và giải pháp tạm thời (kludge) sẽ xuất hiện trong mã
+              nguồn để che giấu các phần chưa hoàn thành của dự án.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu hiểu
+              biết về hậu quả của nợ kỹ thuật
+            </h4>
+            <p>
+              Đôi khi nhà tuyển dụng của bạn có thể không hiểu rằng nợ kỹ thuật
+              có "lãi suất", thể hiện ở việc làm chậm tiến độ phát triển khi nợ
+              tích lũy. Điều này có thể khiến việc dành thời gian của nhóm cho
+              việc tái cấu trúc trở nên quá khó khăn vì ban quản lý không thấy
+              được giá trị của nó.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Không giải
+              quyết được sự liên kết chặt chẽ quá mức giữa các thành phần
+            </h4>
+            <p>
+              Đây là lúc dự án giống như một khối đá nguyên khối hơn là một sản
+              phẩm kết hợp từ các mô-đun riêng lẻ. Trong trường hợp này, bất kỳ
+              thay đổi nào đối với một phần của dự án sẽ ảnh hưởng đến các phần
+              khác. Việc phát triển theo nhóm trở nên khó khăn hơn vì khó có thể
+              cô lập công việc của từng thành viên.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu các
+              bài kiểm thử
+            </h4>
+            <p>
+              Việc thiếu phản hồi ngay lập tức khuyến khích các giải pháp nhanh
+              chóng nhưng mạo hiểm hoặc các bản vá tạm thời (kludge). Trong
+              trường hợp xấu nhất, những thay đổi này được triển khai trực tiếp
+              vào môi trường sản xuất mà không qua bất kỳ kiểm thử nào trước đó.
+              Hậu quả có thể rất thảm khốc. Ví dụ, một hotfix tưởng chừng như vô
+              hại có thể gửi email thử nghiệm kỳ lạ đến hàng nghìn khách hàng
+              hoặc thậm chí tệ hơn, xóa hoặc làm hỏng toàn bộ cơ sở dữ liệu.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu tài
+              liệu
+            </h4>
+            <p>
+              Điều này làm chậm quá trình giới thiệu người mới vào dự án và có
+              thể làm ngừng trệ quá trình phát triển nếu những người chủ chốt
+              rời khỏi dự án.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu sự
+              tương tác giữa các thành viên trong nhóm
+            </h4>
+            <p>
+              Nếu cơ sở kiến thức không được phân phối rộng rãi trong toàn công
+              ty, mọi người sẽ làm việc với một sự hiểu biết lỗi thời về các quy
+              trình và thông tin về dự án. Tình huống này có thể trở nên trầm
+              trọng hơn khi các nhà phát triển mới vào nghề được đào tạo không
+              chính xác bởi những người hướng dẫn của họ.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Phát triển
+              đồng thời dài hạn trên nhiều nhánh
+            </h4>
+            <p>
+              Điều này có thể dẫn đến tích lũy nợ kỹ thuật, sau đó sẽ tăng lên
+              khi các thay đổi được hợp nhất. Càng nhiều thay đổi được thực hiện
+              riêng lẻ, tổng nợ kỹ thuật càng lớn.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Trì hoãn
+              tái cấu trúc
+            </h4>
+            <p>
+              Các yêu cầu của dự án liên tục thay đổi và đến một lúc nào đó, có
+              thể rõ ràng là một số phần của mã nguồn đã lỗi thời, trở nên cồng
+              kềnh và phải được thiết kế lại để đáp ứng các yêu cầu mới.
+            </p>
+            <p>
+              Mặt khác, các lập trình viên của dự án vẫn viết mã mới mỗi ngày,
+              và mã mới này phải tương tác với các phần đã lỗi thời. Do đó, việc
+              trì hoãn tái cấu trúc càng lâu thì càng có nhiều mã nguồn phụ
+              thuộc phải được làm lại trong tương lai.
+            </p>
+            <h4>
+              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu giám
+              sát tuân thủ
+            </h4>
+            <p>
+              Điều này xảy ra khi mọi người làm việc trên dự án viết mã theo
+              cách họ thấy phù hợp (tức là giống như cách họ đã viết dự án trước
+              đó).
             </p>
             <h4>
               <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие понимания последствий технического долга
+              Thiếu năng lực
             </h4>
             <p>
-              Появляется когда бизнес не понимает, что технический долг
-              «начисляет проценты» в виде замедления темпов разработки по мере
-              накопления долга. Из-за этого слишком сложно выделить время
-              команды на рефакторинг, так как руководство не видит в этом
-              ценности.
+              Đây là khi lập trình viên không biết cách viết mã nguồn tử tế.
             </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие борьбы с жёсткой связанностью компонентов
-            </h4>
-            <p>
-              Это когда проект напоминает монолит, а не связь отдельных модулей.
-              В этом случае любые изменения одной части проекта затрагивают
-              другие. Командная разработка затруднена, так как сложно
-              изолировать участки работы отдельных людей.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие авто-тестов
-            </h4>
-            <p>
-              Отсутствие немедленной обратной связи поощряет быстрые, но
-              рискованные исправления и «костыли», иногда прямо на продакшене.
-              Эффекты от этого бывают катастрофические. Например, невинный
-              хот-фикс рассылает тестовое письмо по всей базе клиентов или
-              удаляет реальные данные клиентов в базе данных.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие документации
-            </h4>
-            <p>
-              Отсутствующая либо устарелая документация замедляет введение новых
-              людей в проект. Такой проект рискует полностью застопориться, если
-              ключевые сотрудники уволятся.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие взаимодействия между членами команды
-            </h4>
-            <p>
-              Когда база знаний не распространяется по организации, люди
-              работают с устаревшим пониманием процессов и деталей проекта.
-              Положение усугубляется, когда младшие разработчики неправильно
-              обучаются их наставниками.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Долговременная одновременная разработка в нескольких ветках
-            </h4>
-            <p>
-              Может вызвать накопление технического долга, который необходимо
-              восполнить при слиянии изменений воедино. Чем больше изменений,
-              которые сделаны изолировано, тем больше итоговый технический долг.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отложенный рефакторинг
-            </h4>
-            <p>
-              Требования к проекту постоянно изменяются и в определённый момент,
-              может стать очевидным, что части кода устарели, стали громоздкими
-              и должны быть переработаны под новые требования.
-            </p>
-            <p>
-              С другой стороны, программисты проекта каждый день пишут новый
-              код, работающий с устаревшими частями. Поэтому чем дольше
-              задерживается рефакторинг, тем больше зависимого кода придётся
-              перелопачивать в будущем.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие контроля за соблюдением стандартов
-            </h4>
-            <p>
-              Каждый участник проекта пишет код так, как считает правильным
-              (так, как он писал на прошлом проекте). В итоге код проекта
-              превращается в салат из стилей кодирования, затрудняя понимание
-              кода для всех членов команды.
-            </p>
-            <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
-              Отсутствие компетенции
-            </h4>
-            <p>Когда разработчик просто не умеет писать качественный код.</p>
           </article>
 
           <nav class="prev-next">
             <div class="next">
-              <h4>Читаем дальше</h4>
-              <a rel="next" href="when.html" class="btn btn-primary">
-                Когда рефакторить&nbsp;<span class="fa fa-arrow-right"></span>
+              <h4>ĐỌC TIẾP THEO</h4>
+              <a rel="next" href="/refactoring/when" class="btn btn-primary">
+                Khi nào cần tái cấu trúc&nbsp;
+                <span class="fa fa-arrow-right"></span>
               </a>
             </div>
             <div class="prev">
-              <h4>Вернуться назад</h4>
+              <h4>TRỞ LẠI</h4>
               <a
                 rel="prev"
-                href="what-is-refactoring.html"
+                href="/refactoring/what-is-refactoring"
                 class="btn btn-default"
               >
-                <span class="fa fa-arrow-left"></span>&nbsp;Чистый код
+                <span class="fa fa-arrow-left"></span>&nbsp;Mã Sạch
               </a>
             </div>
           </nav>
