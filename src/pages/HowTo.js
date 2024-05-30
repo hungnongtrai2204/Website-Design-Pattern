@@ -1,17 +1,17 @@
 import Cart from "../components/cart/Cart";
-import ContentWhen from "../components/content/refactoring/ContentWhen";
+import ContentHowTo from "../components/content/refactoring/ContentHowTo";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Navigation from "../components/navigation/Navigation";
 import Sidebar from "../components/sidebar/Sidebar";
 
-const WhenPage = () => {
+const HowToPage = () => {
   return (
     <body class="locale-ru announcement" data-body_class="">
       <div className="body-holder">
         <Header />
         <Cart />
-        <ContentWhen />
+        <ContentHowTo />
         <Navigation />
         <Sidebar />
         <Footer />
@@ -19,4 +19,4 @@ const WhenPage = () => {
     </body>
   );
 };
-export default WhenPage;
+export default HowToPage;

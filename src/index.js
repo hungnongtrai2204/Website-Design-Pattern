@@ -12,6 +12,10 @@ import RefactoringPage from "./pages/Refactoring";
 import WhatIsRefactoringPage from "./pages/WhatIsRefactoring";
 import TechnicalDebtPage from "./pages/TechnicalDebt";
 import WhenPage from "./pages/When";
+import HowToPage from "./pages/HowTo";
+import CatalogPage from "./pages/Catalog";
+import SmellPage from "./pages/Smell";
+import BloatersPage from "./pages/smell/bloaters/bloaters";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,6 +48,22 @@ const router = createBrowserRouter([
   {
     path: "/refactoring/when",
     element: <WhenPage />,
+  },
+  {
+    path: "/refactoring/how-to",
+    element: <HowToPage />,
+  },
+  {
+    path: "/refactoring/catalog",
+    element: <CatalogPage />,
+  },
+  {
+    path: "/refactoring/smells",
+    element: <SmellPage />,
+  },
+  {
+    path: "/refactoring/smells/bloaters",
+    element: <BloatersPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

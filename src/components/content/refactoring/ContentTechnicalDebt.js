@@ -2,28 +2,28 @@ const ContentTechnicalDebt = () => {
   return (
     <main
       role="main"
-      class="main-content top-content center-content"
+      className="main-content top-content center-content"
       data-page_class=""
     >
-      <div class="main-content-container center-content-container">
-        <div class="page text">
+      <div className="main-content-container center-content-container">
+        <div className="page text">
           <article>
-            <div class="breadcrumb">
-              <a class="home" href="/">
-                <i class="fa fa-home" aria-hidden="true"></i>
+            <div className="breadcrumb">
+              <a className="home" href="/">
+                <i className="fa fa-home" aria-hidden="true"></i>
               </a>{" "}
               /{" "}
-              <a class="type" href="/refactoring">
+              <a className="type" href="/refactoring">
                 Tái Cấu Trúc
               </a>
             </div>
-            <h1 class="title">Nợ kỹ thuật</h1>
+            <h1 className="title">Nợ kỹ thuật</h1>
 
             {/* <script type="text/javascript">
             // Shorten examples titles for users.
             var h1 = document.getElementsByTagName("H1")[0];
             if (h1.offsetHeight > 160) {
-              h1.className += " smaller";
+              h1.classNameName += " smaller";
             }
 
             // Small beautification for pattern examples.
@@ -66,8 +66,8 @@ const ContentTechnicalDebt = () => {
             </p>
             <h2>Nguyên nhân của nợ kỹ thuật</h2>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Áp lực kinh
-              doanh
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Áp lực
+              kinh doanh
             </h4>
             <p>
               Đôi khi hoàn cảnh kinh doanh có thể buộc bạn phải tung ra các tính
@@ -76,8 +76,8 @@ const ContentTechnicalDebt = () => {
               nguồn để che giấu các phần chưa hoàn thành của dự án.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu hiểu
-              biết về hậu quả của nợ kỹ thuật
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Thiếu
+              hiểu biết về hậu quả của nợ kỹ thuật
             </h4>
             <p>
               Đôi khi nhà tuyển dụng của bạn có thể không hiểu rằng nợ kỹ thuật
@@ -87,8 +87,8 @@ const ContentTechnicalDebt = () => {
               được giá trị của nó.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Không giải
-              quyết được sự liên kết chặt chẽ quá mức giữa các thành phần
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Không
+              giải quyết được sự liên kết chặt chẽ quá mức giữa các thành phần
             </h4>
             <p>
               Đây là lúc dự án giống như một khối đá nguyên khối hơn là một sản
@@ -98,8 +98,8 @@ const ContentTechnicalDebt = () => {
               cô lập công việc của từng thành viên.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu các
-              bài kiểm thử
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Thiếu
+              các bài kiểm thử
             </h4>
             <p>
               Việc thiếu phản hồi ngay lập tức khuyến khích các giải pháp nhanh
@@ -111,8 +111,8 @@ const ContentTechnicalDebt = () => {
               hoặc thậm chí tệ hơn, xóa hoặc làm hỏng toàn bộ cơ sở dữ liệu.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu tài
-              liệu
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Thiếu
+              tài liệu
             </h4>
             <p>
               Điều này làm chậm quá trình giới thiệu người mới vào dự án và có
@@ -120,8 +120,8 @@ const ContentTechnicalDebt = () => {
               rời khỏi dự án.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu sự
-              tương tác giữa các thành viên trong nhóm
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Thiếu
+              sự tương tác giữa các thành viên trong nhóm
             </h4>
             <p>
               Nếu cơ sở kiến thức không được phân phối rộng rãi trong toàn công
@@ -131,8 +131,8 @@ const ContentTechnicalDebt = () => {
               chính xác bởi những người hướng dẫn của họ.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Phát triển
-              đồng thời dài hạn trên nhiều nhánh
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Phát
+              triển đồng thời dài hạn trên nhiều nhánh
             </h4>
             <p>
               Điều này có thể dẫn đến tích lũy nợ kỹ thuật, sau đó sẽ tăng lên
@@ -140,8 +140,8 @@ const ContentTechnicalDebt = () => {
               riêng lẻ, tổng nợ kỹ thuật càng lớn.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Trì hoãn
-              tái cấu trúc
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Trì
+              hoãn tái cấu trúc
             </h4>
             <p>
               Các yêu cầu của dự án liên tục thay đổi và đến một lúc nào đó, có
@@ -155,8 +155,8 @@ const ContentTechnicalDebt = () => {
               thuộc phải được làm lại trong tương lai.
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i> Thiếu giám
-              sát tuân thủ
+              <i className="fa fa-badge-percent" aria-hidden="true"></i> Thiếu
+              giám sát tuân thủ
             </h4>
             <p>
               Điều này xảy ra khi mọi người làm việc trên dự án viết mã theo
@@ -164,7 +164,7 @@ const ContentTechnicalDebt = () => {
               đó).
             </p>
             <h4>
-              <i class="fa fa-badge-percent" aria-hidden="true"></i>
+              <i className="fa fa-badge-percent" aria-hidden="true"></i>
               Thiếu năng lực
             </h4>
             <p>
@@ -172,28 +172,32 @@ const ContentTechnicalDebt = () => {
             </p>
           </article>
 
-          <nav class="prev-next">
-            <div class="next">
-              <h4>ĐỌC TIẾP THEO</h4>
-              <a rel="next" href="/refactoring/when" class="btn btn-primary">
+          <nav className="prev-next">
+            <div className="next">
+              <h4>ĐỌC TIẾP</h4>
+              <a
+                rel="next"
+                href="/refactoring/when"
+                className="btn btn-primary"
+              >
                 Khi nào cần tái cấu trúc&nbsp;
-                <span class="fa fa-arrow-right"></span>
+                <span className="fa fa-arrow-right"></span>
               </a>
             </div>
-            <div class="prev">
+            <div className="prev">
               <h4>TRỞ LẠI</h4>
               <a
                 rel="prev"
                 href="/refactoring/what-is-refactoring"
-                class="btn btn-default"
+                className="btn btn-default"
               >
-                <span class="fa fa-arrow-left"></span>&nbsp;Mã Sạch
+                <span className="fa fa-arrow-left"></span>&nbsp;Mã Sạch
               </a>
             </div>
           </nav>
         </div>
 
-        <aside class="feature content-secondary"></aside>
+        <aside className="feature content-secondary"></aside>
       </div>
     </main>
   );

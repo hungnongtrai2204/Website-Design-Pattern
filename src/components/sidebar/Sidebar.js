@@ -4,7 +4,7 @@ const Sidebar = () => {
   const location = useLocation();
   // console.log(location.pathname.includes("store"));
   return (
-    <aside className="sidebar main-menu nano">
+    <aside className="sidebar main-menu nano" style={{ overflow: "scroll" }}>
       <a href="#menu-close" className="navigation-toggle">
         <i className="fa fa-fw fa-times"></i>
       </a>
@@ -169,8 +169,16 @@ const Sidebar = () => {
 
               <ul>
                 <li
+                  // className={
+                  //   location.pathname.includes("refactoring")
+                  //     ? "featured menu-fs15 trail "
+                  //     : "featured menu-fs15"
+                  // }
                   className={
-                    location.pathname.includes("refactoring")
+                    location.pathname.includes("what-is-refactoring") ||
+                    location.pathname.includes("technical-debt") ||
+                    location.pathname.includes("when") ||
+                    location.pathname.includes("how-to")
                       ? "featured menu-fs15 trail "
                       : "featured menu-fs15"
                   }
@@ -205,54 +213,80 @@ const Sidebar = () => {
                           : "featured menu-fs15"
                       }
                     >
-                      <a href="ru/refactoring/when.html">
-                        Khi nào cần tái cấu trúc
-                      </a>
+                      <a href="/refactoring/when">Khi nào cần tái cấu trúc</a>
                     </li>
-                    <li className="">
-                      <a href="ru/refactoring/how-to.html">Cách tái cấu trúc</a>
+                    <li
+                      className={
+                        location.pathname.includes("how-to")
+                          ? "featured menu-fs15 trail active"
+                          : "featured menu-fs15"
+                      }
+                    >
+                      <a href="/refactoring/how-to">Cách tái cấu trúc</a>
                     </li>
                   </ul>
                 </li>
-                <li className="">
-                  <a href="ru/refactoring/catalog.html"> Mục lục </a>
+                <li
+                  className={
+                    location.pathname.includes("catalog")
+                      ? "featured menu-fs15 trail active"
+                      : "featured menu-fs15"
+                  }
+                >
+                  <a href="/refactoring/catalog"> Danh mục </a>
                 </li>
-                <li className="">
-                  <a href="ru/refactoring/smells.html"> Mùi Mã </a>
+                <li
+                  className={
+                    location.pathname.includes("smells")
+                      ? `featured menu-fs15 trail ${
+                          location.pathname == "/refactoring/smells"
+                            ? "active"
+                            : ""
+                        }`
+                      : "featured menu-fs15"
+                  }
+                >
+                  <a href="/refactoring/smells"> Mùi Mã </a>
 
                   <ul>
-                    <li className="">
-                      <a href="ru/refactoring/smells/bloaters.html">
-                        Раздувальщики
-                      </a>
+                    <li
+                      className={
+                        location.pathname.includes("bloaters")
+                          ? "featured menu-fs15 trail active"
+                          : "featured menu-fs15"
+                      }
+                    >
+                      <a href="/refactoring/smells/bloaters">Mã Phình To</a>
 
                       <ul>
                         <li className="">
-                          <a href="ru/smells/long-method.html">Длинный метод</a>
-                        </li>
-                        <li className="">
-                          <a href="ru/smells/large-className.html">
-                            Большой класс
+                          <a href="/refactoring/smells/long-method">
+                            Phương Thức Dài
                           </a>
                         </li>
                         <li className="">
-                          <a href="ru/smells/primitive-obsession.html">
-                            Одержимость элементарными типами
+                          <a href="/refactoring/smells/large-class">Lớp Lớn</a>
+                        </li>
+                        <li className="">
+                          <a href="/refactoring/smells/primitive-obsession">
+                            Ám Ảnh Nguyên Thủy
                           </a>
                         </li>
                         <li className="">
-                          <a href="ru/smells/long-parameter-list.html">
-                            Длинный список параметров
+                          <a href="/refactoring/smells/long-parameter-list">
+                            Danh Sách Tham Số Dài
                           </a>
                         </li>
                         <li className="">
-                          <a href="ru/smells/data-clumps.html">Группы данных</a>
+                          <a href="/refactoring/smells/data-clumps">
+                            Cụm Dữ Liệu
+                          </a>
                         </li>
                       </ul>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/smells/oo-abusers.html">
-                        Нарушители объектно-ориентированного дизайна
+                      <a href="/refactoring/smells/oo-abusers">
+                        Lạm Dụng Hướng Đối Tượng
                       </a>
 
                       <ul>
@@ -279,8 +313,8 @@ const Sidebar = () => {
                       </ul>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/smells/change-preventers.html">
-                        Утяжелители изменений
+                      <a href="/refactoring/smells/change-preventers">
+                        Các Yếu Tố Ngăn Cản Thay Đổi
                       </a>
 
                       <ul>
@@ -302,8 +336,8 @@ const Sidebar = () => {
                       </ul>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/smells/dispensables.html">
-                        Замусориватели
+                      <a href="/refactoring/smells/dispensables">
+                        Thành Phần Dư Thừa
                       </a>
 
                       <ul>
@@ -336,8 +370,8 @@ const Sidebar = () => {
                       </ul>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/smells/couplers.html">
-                        Опутыватели связями
+                      <a href="/refactoring/smells/couplers">
+                        Các Yếu Tố Liên Kết Quá Mức
                       </a>
 
                       <ul>
@@ -362,9 +396,7 @@ const Sidebar = () => {
                       </ul>
                     </li>
                     <li className="">
-                      <a href="ru/refactoring/smells/other.html">
-                        Остальные запахи
-                      </a>
+                      <a href="/refactoring/smells/other">Các Mùi Mã Khác</a>
 
                       <ul>
                         <li className="">
