@@ -49,7 +49,9 @@ const ContentBloater = () => {
             <div class="relations link-list">
               <div class="dl">
                 <div class="dt">
-                  <a href="/refactoring/smells/long-method">Phương Thức Dài</a>
+                  <a href="/refactoring/smells/bloaters/long-method">
+                    Phương Thức Dài
+                  </a>
                 </div>
                 <div class="dd">
                   <p>
@@ -61,7 +63,7 @@ const ContentBloater = () => {
               </div>
               <div class="dl">
                 <div class="dt">
-                  <a href="/refactoring/smells/large-class">Lớp Lớn</a>
+                  <a href="/refactoring/smells/bloaters/large-class">Lớp Lớn</a>
                 </div>
                 <div class="dd">
                   <p>
@@ -72,7 +74,7 @@ const ContentBloater = () => {
               </div>
               <div class="dl">
                 <div class="dt">
-                  <a href="/refactoring/smells/primitive-obsession">
+                  <a href="/refactoring/smells/bloaters/primitive-obsession">
                     Ám Ảnh Nguyên Thủy
                   </a>
                 </div>
@@ -98,7 +100,7 @@ const ContentBloater = () => {
               </div>
               <div class="dl">
                 <div class="dt">
-                  <a href="/refactoring/smells/long-parameter-list">
+                  <a href="/refactoring/smells/bloaters/long-parameter-list">
                     Danh Sách Tham Số Dài
                   </a>
                 </div>
@@ -108,7 +110,9 @@ const ContentBloater = () => {
               </div>
               <div class="dl">
                 <div class="dt">
-                  <a href="/refactoring/smells/data-clumps">Cụm Dữ Liệu</a>
+                  <a href="/refactoring/smells/bloaters/data-clumps">
+                    Cụm Dữ Liệu
+                  </a>
                 </div>
                 <div class="dd">
                   <p>
@@ -127,7 +131,7 @@ const ContentBloater = () => {
               <h4>ĐỌC TIẾP</h4>
               <a
                 rel="next"
-                href="/refactoring/smells/long-method"
+                href="/refactoring/smells/bloaters/long-method"
                 class="btn btn-primary"
               >
                 Phương Thức Dài&nbsp;<span class="fa fa-arrow-right"></span>

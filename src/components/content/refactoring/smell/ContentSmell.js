@@ -53,29 +53,33 @@ const ContentSmell = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/long-method">
+                      <a href="/refactoring/smells/bloaters/long-method">
                         Phương Thức Dài
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/large-class">Lớp Lớn</a>
+                      <a href="/refactoring/smells/bloaters/large-class">
+                        Lớp Lớn
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/primitive-obsession">
+                      <a href="/refactoring/smells/bloaters/primitive-obsession">
                         Ám Ảnh Nguyên Thủy
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/long-parameter-list">
+                      <a href="/refactoring/smells/bloaters/long-parameter-list">
                         Danh Sách Tham Số Dài
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/data-clumps">Cụm Dữ Liệu</a>
+                      <a href="/refactoring/smells/bloaters/data-clumps">
+                        Cụm Dữ Liệu
+                      </a>
                     </li>
                   </ul>
                 </div>

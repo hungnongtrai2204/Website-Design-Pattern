@@ -16,6 +16,8 @@ import HowToPage from "./pages/HowTo";
 import CatalogPage from "./pages/Catalog";
 import SmellPage from "./pages/Smell";
 import BloatersPage from "./pages/smell/bloaters/bloaters";
+import LongMethodPage from "./pages/smell/bloaters/long-method";
+import LargeClassPage from "./pages/smell/bloaters/large-class";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -64,6 +66,14 @@ const router = createBrowserRouter([
   {
     path: "/refactoring/smells/bloaters",
     element: <BloatersPage />,
+  },
+  {
+    path: "/refactoring/smells/bloaters/long-method",
+    element: <LongMethodPage />,
+  },
+  {
+    path: "/refactoring/smells/bloaters/large-class",
+    element: <LargeClassPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

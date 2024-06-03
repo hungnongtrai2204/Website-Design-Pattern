@@ -252,33 +252,52 @@ const Sidebar = () => {
                     <li
                       className={
                         location.pathname.includes("bloaters")
-                          ? "featured menu-fs15 trail active"
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/smells/bloaters"
+                                ? "active"
+                                : ""
+                            }`
                           : "featured menu-fs15"
                       }
                     >
                       <a href="/refactoring/smells/bloaters">Mã Phình To</a>
 
                       <ul>
-                        <li className="">
-                          <a href="/refactoring/smells/long-method">
+                        <li
+                          className={
+                            location.pathname.includes("long-method")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/bloaters/long-method">
                             Phương Thức Dài
                           </a>
                         </li>
-                        <li className="">
-                          <a href="/refactoring/smells/large-class">Lớp Lớn</a>
+                        <li
+                          className={
+                            location.pathname.includes("large-class")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/bloaters/large-class">
+                            Lớp Lớn
+                          </a>
                         </li>
                         <li className="">
-                          <a href="/refactoring/smells/primitive-obsession">
+                          <a href="/refactoring/smells/bloaters/primitive-obsession">
                             Ám Ảnh Nguyên Thủy
                           </a>
                         </li>
                         <li className="">
-                          <a href="/refactoring/smells/long-parameter-list">
+                          <a href="/refactoring/smells/bloaters/long-parameter-list">
                             Danh Sách Tham Số Dài
                           </a>
                         </li>
                         <li className="">
-                          <a href="/refactoring/smells/data-clumps">
+                          <a href="/refactoring/smells/bloaters/data-clumps">
                             Cụm Dữ Liệu
                           </a>
                         </li>

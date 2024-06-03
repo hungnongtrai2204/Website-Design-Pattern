@@ -39,7 +39,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="bloaters">
-                  <a href="/smells/bloaters">Mã Phình To</a>
+                  <a href="/refactoring/smells/bloaters">Mã Phình To</a>
                 </h3>
 
                 <div className="annotation">
@@ -55,27 +55,33 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/smells/long-method">Phương Thức Dài</a>
+                      <a href="/refactoring/smells/bloaters/long-method">
+                        Phương Thức Dài
+                      </a>
                     </li>
                     <li>
-                      <a href="/smells/large-class">Lớp Lớn</a>
+                      <a href="/refactoring/smells/bloaters/large-class">
+                        Lớp Lớn
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/primitive-obsession">
+                      <a href="/refactoring/smells/bloaters/primitive-obsession">
                         Ám Ảnh Nguyên Thủy
                       </a>
                     </li>
                     <li>
-                      <a href="/smells/long-parameter-list">
+                      <a href="/refactoring/smells/bloaters/long-parameter-list">
                         Danh Sách Tham Số Dài
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/data-clumps">Cụm Dữ Liệu</a>
+                      <a href="/refactoring/smells/bloaters/data-clumps">
+                        Cụm Dữ Liệu
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -97,7 +103,9 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="oo-abusers">
-                  <a href="/smells/oo-abusers">Lạm Dụng Hướng Đối Tượng</a>
+                  <a href="/refactoring/smells/oo-abusers">
+                    Lạm Dụng Hướng Đối Tượng
+                  </a>
                 </h3>
                 <div className="annotation">
                   <p>
@@ -109,22 +117,28 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/smells/alternative-classNamees-with-different-interfaces">
+                      <a href="/refactoring/smells/alternative-classNamees-with-different-interfaces">
                         Các Lớp Thay Thế Với Giao Diện Khác Nhau
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/refused-bequest">Từ Chối Thừa Kế</a>
+                      <a href="/refactoring/smells/refused-bequest">
+                        Từ Chối Thừa Kế
+                      </a>
                     </li>
                     <li>
-                      <a href="/smells/switch-statements">Câu Lệnh Switch</a>
+                      <a href="/refactoring/smells/switch-statements">
+                        Câu Lệnh Switch
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/temporary-field">Trường Tạm Thời</a>
+                      <a href="/refactoring/smells/temporary-field">
+                        Trường Tạm Thời
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -146,7 +160,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="change-preventers">
-                  <a href="/smells/change-preventers">
+                  <a href="/refactoring/smells/change-preventers">
                     Các Yếu Tố Ngăn Cản Thay Đổi
                   </a>
                 </h3>
@@ -162,19 +176,21 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/smells/divergent-change">Thay Đổi Phân Kỳ</a>
+                      <a href="/refactoring/smells/divergent-change">
+                        Thay Đổi Phân Kỳ
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/parallel-inheritance-hierarchies">
+                      <a href="/refactoring/smells/parallel-inheritance-hierarchies">
                         Cấu Trúc Kế Thừa Song Song
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/shotgun-surgery">
+                      <a href="/refactoring/smells/shotgun-surgery">
                         Phẫu Thuật Bằng Súng Săn
                       </a>
                     </li>
@@ -198,7 +214,9 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="dispensables">
-                  <a href="/smells/dispensables">Thành Phần Dư Thừa</a>
+                  <a href="/refactoring/smells/dispensables">
+                    Thành Phần Dư Thừa
+                  </a>
                 </h3>
                 <div className="annotation">
                   <p>
@@ -210,26 +228,30 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/smells/comments">Chú Thích</a>
+                      <a href="/refactoring/smells/comments">Chú Thích</a>
                     </li>
                     <li>
-                      <a href="/smells/duplicate-code">Mã Trùng Lặp</a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <a href="/smells/data-class">Lớp Dữ Liệu</a>
-                    </li>
-                    <li>
-                      <a href="/smells/dead-code">Mã Chết</a>
+                      <a href="/refactoring/smells/duplicate-code">
+                        Mã Trùng Lặp
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/lazy-class">Lớp Lười Biếng</a>
+                      <a href="/refactoring/smells/data-class">Lớp Dữ Liệu</a>
                     </li>
                     <li>
-                      <a href="/smells/speculative-generality">
+                      <a href="/refactoring/smells/dead-code">Mã Chết</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="/refactoring/smells/lazy-class">
+                        Lớp Lười Biếng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/refactoring/smells/speculative-generality">
                         Tính Tổng Quát Phỏng Đoán
                       </a>
                     </li>
@@ -258,7 +280,9 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="couplers">
-                  <a href="/smells/couplers">Các Yếu Tố Liên Kết Quá Mức</a>
+                  <a href="/refactoring/smells/couplers">
+                    Các Yếu Tố Liên Kết Quá Mức
+                  </a>
                 </h3>
                 <div className="annotation">
                   <p>
@@ -270,27 +294,33 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/smells/feature-envy">Ganh Tỵ Tính Năng</a>
+                      <a href="/refactoring/smells/feature-envy">
+                        Ganh Tỵ Tính Năng
+                      </a>
                     </li>
                     <li>
-                      <a href="/smells/inappropriate-intimacy">
+                      <a href="/refactoring/smells/inappropriate-intimacy">
                         Quan Hệ Quá Gần Gũi
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/incomplete-library-class">
+                      <a href="/refactoring/smells/incomplete-library-class">
                         Lớp Thư Viện Không Hoàn Chỉnh
                       </a>
                     </li>
                     <li>
-                      <a href="/smells/message-chains">Chuỗi Thông Điệp</a>
+                      <a href="/refactoring/smells/message-chains">
+                        Chuỗi Thông Điệp
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/smells/middle-man">Người Trung Gian</a>
+                      <a href="/refactoring/smells/middle-man">
+                        Người Trung Gian
+                      </a>
                     </li>
                   </ul>
                 </div>
