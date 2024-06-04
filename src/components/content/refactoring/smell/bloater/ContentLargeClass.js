@@ -98,7 +98,7 @@ const ContentLargeClass = () => {
             <li>
               <p>
               Nếu một lớp lớn chịu trách nhiệm về giao diện đồ họa, bạn có thể thử chuyển một số dữ liệu và hành vi của nó sang một đối tượng miền riêng biệt. Khi làm như vậy, có thể cần phải lưu trữ các bản sao của một số dữ liệu ở hai nơi và giữ cho dữ liệu nhất quán. Kỹ thuật{" "}
-                <a href="/refactorings/organizing-data/duplicate-observed-data.html"
+                <a href="/refactorings/organizing-data/duplicate-observed-data"
                   >Sao Chép Dữ Liệu Quan Sát</a
                 >
                 {" "}cung cấp một cách để làm điều này.
