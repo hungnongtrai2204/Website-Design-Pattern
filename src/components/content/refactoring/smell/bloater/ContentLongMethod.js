@@ -132,38 +132,35 @@ const ContentLongMethod = () => {
                 <p>
                   Nếu các cách trên không hiệu quả, hãy thử chuyển toàn bộ
                   phương thức sang một đối tượng riêng biệt bằng kỹ thuật{" "}
-                  <a href="../replace-method-with-method-object.html">
-                    замены метода объектом методов
+                  <a href="/refactorings/composing-method/replace-method-with-method-object.html">
+                  Thay Thế Phương Thức Bằng Đối Tượng Phương Thức
                   </a>
                   .
                 </p>
               </li>
               <li>
                 <p>
-                  Условные операторы и циклы свидетельствуют о возможности
-                  выделения кода в отдельный метод. Для работы с условными
-                  выражениями подходит
-                  <a href="../decompose-conditional.html">
-                    декомпозиция условных операторов
+                Các toán tử điều kiện và vòng lặp thường là dấu hiệu cho thấy mã có thể được chuyển sang phương thức riêng biệt. Với câu lệnh điều kiện, sử dụng{" "}
+                  <a href="/refactorings/simplifying-method-calls/decompose-conditional">
+                  Phân Rã Điều Kiện
                   </a>
-                  . Для работы с циклом —
-                  <a href="../extract-method.html">извлечение метода</a>.
+                  . Nếu vòng lặp cản trở, sử dụng{" "}
+                  <a href="/refactorings/composing-method/extract-method">Trích Xuất Phương Thức</a>.
                 </p>
               </li>
             </ul>
-            <h3>Выигрыш</h3>
+            <h3>Lợi Ích</h3>
             <ul>
               <li>
                 <p>
-                  Из всех видов объектного кода дольше всего выживают классы с
-                  короткими методами. Чем длиннее ваш метод или функция, тем
-                  труднее будет её понять и поддерживать.
+                Trong tất cả các loại mã hướng đối tượng, các lớp có phương thức ngắn sẽ tồn tại lâu nhất. Phương thức hoặc hàm càng dài thì càng khó hiểu và bảo trì.
+
+
                 </p>
               </li>
               <li>
                 <p>
-                  Кроме того, в длинных методах зачастую можно обнаружить
-                  «залежи» дублирования кода.
+                Ngoài ra, các phương thức dài cung cấp nơi ẩn náu hoàn hảo cho mã trùng lặp không mong muốn.
                 </p>
               </li>
             </ul>
@@ -178,17 +175,12 @@ const ContentLongMethod = () => {
                 loading="lazy"
               />
             </figure>
-            <h3>Производительность</h3>
+            <h3>Hiệu Năng</h3>
             <p>
-              Многие волнуются, что увеличение числа методов может плохо
-              сказаться на производительности. В абсолютном большинстве случаев,
-              это не является реальной проблемой, так что
-              <strong>просто перестаньте об этом думать.</strong>
+            Liệu việc tăng số lượng phương thức có làm giảm hiệu suất như nhiều người vẫn tuyên bố không? Trong hầu hết các trường hợp, tác động là không đáng kể đến mức không cần phải lo lắng.
             </p>
             <p>
-              Имея чистый и понятный код, вы с большей вероятностью натолкнётесь
-              на отличный способ реструктуризировать код программы и увеличить
-              реальную производительность, если такая надобность вообще будет.
+            Hơn nữa, giờ đây khi bạn đã có mã nguồn rõ ràng và dễ hiểu, bạn sẽ dễ dàng tìm ra những phương pháp thực sự hiệu quả để tái cấu trúc mã và đạt được những cải thiện hiệu năng thực sự nếu cần.
             </p>
 
             <div
@@ -198,10 +190,11 @@ const ContentLongMethod = () => {
               data-position="content_bottom"
             >
               <div class="banner-image">
-                <a href="../refactoring/course.html">
+                <a href="/store/course">
                   <video
                     id="banner-zzz"
                     loop
+                    autoPlay
                     muted
                     playsinline
                     width="200"
@@ -228,17 +221,16 @@ const ContentLongMethod = () => {
             </script> */}
 
               <div class="banner-text">
-                <h3 class="title">Устали читать?</h3>
+                <h3 class="title">Mệt mỏi vì đọc quá nhiều?</h3>
                 <p class="big">
-                  Сбегайте за подушкой, у нас тут контента на
-                  <span class="blue">7 часов</span> чтения.
+                Không có gì lạ, phải mất {" "}
+                  <span class="blue">7 giờ</span> để đọc hết tất cả các văn bản ở đây.
                 </p>
                 <p>
-                  Или попробуйте наш интерактивный курс. Он гораздо более
-                  интересный, чем банальный текст.
+                Hãy thử khóa học tương tác của chúng tôi về tái cấu trúc. Nó cung cấp một cách tiếp cận bớt tẻ nhạt hơn để học những kiến thức mới.
                 </p>
-                <a class="btn btn-secondary" href="../refactoring/course.html">
-                  <i class="fa fa-star" aria-hidden="true"></i> Узнать больше…
+                <a class="btn btn-secondary" href="/store/course">
+                  <i class="fa fa-star" aria-hidden="true"></i> Cùng xem nào...
                 </a>
               </div>
             </div>
@@ -246,19 +238,19 @@ const ContentLongMethod = () => {
 
           <nav class="prev-next">
             <div class="next">
-              <h4>Читаем дальше</h4>
-              <a rel="next" href="large-class.html" class="btn btn-primary">
-                Большой класс&nbsp;<span class="fa fa-arrow-right"></span>
+              <h4>ĐỌC TIẾP</h4>
+              <a rel="next" href="/refactoring/smells/bloaters/large-class" class="btn btn-primary">
+                Lớp Lớn&nbsp;<span class="fa fa-arrow-right"></span>
               </a>
             </div>
             <div class="prev">
-              <h4>Вернуться назад</h4>
+              <h4>TRỞ LẠI</h4>
               <a
                 rel="prev"
-                href="../refactoring/smells/bloaters.html"
+                href="/refactoring/smells/bloaters"
                 class="btn btn-default"
               >
-                <span class="fa fa-arrow-left"></span>&nbsp;Раздувальщики
+                <span class="fa fa-arrow-left"></span>&nbsp;Mã Phình To
               </a>
             </div>
           </nav>
@@ -273,8 +265,8 @@ const ContentLongMethod = () => {
           >
             <div class="ban">
               <div class="image product-image">
-                <span class="banner-discount">Скидки!</span>
-                <a href="../refactoring/course.html">
+                <span class="banner-discount">SALE!</span>
+                <a href="/store/course">
                   <img
                     width="300"
                     height="300"
@@ -285,14 +277,14 @@ const ContentLongMethod = () => {
               </div>
               <div class="banner-text banner-text-ru">
                 <p class="text-center">
-                  Этот запах кода — малая часть интерактивного
-                  <b>онлайн курса по рефакторингу</b>.
+                Mùi mã này là một phần của{" "}
+                  <b>Khóa Học Tái Cấu Trúc</b>{" "}lớn hơn nhiều..
                 </p>
                 <a
-                  href="../refactoring/course.html"
+                  href="/store/course"
                   class="btn btn-secondary btn-block"
                 >
-                  <i class="fa fa-star" aria-hidden="true"></i> Узнать больше…
+                  <i class="fa fa-star" aria-hidden="true"></i> Tìm hiểu thêm...
                 </a>
               </div>
             </div>
