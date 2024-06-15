@@ -133,19 +133,24 @@ const ContentLongMethod = () => {
                   Nếu các cách trên không hiệu quả, hãy thử chuyển toàn bộ
                   phương thức sang một đối tượng riêng biệt bằng kỹ thuật{" "}
                   <a href="/refactorings/composing-method/replace-method-with-method-object.html">
-                  Thay Thế Phương Thức Bằng Đối Tượng Phương Thức
+                    Thay Thế Phương Thức Bằng Đối Tượng Phương Thức
                   </a>
                   .
                 </p>
               </li>
               <li>
                 <p>
-                Các toán tử điều kiện và vòng lặp thường là dấu hiệu cho thấy mã có thể được chuyển sang phương thức riêng biệt. Với câu lệnh điều kiện, sử dụng{" "}
+                  Các toán tử điều kiện và vòng lặp thường là dấu hiệu cho thấy
+                  mã có thể được chuyển sang phương thức riêng biệt. Với câu
+                  lệnh điều kiện, sử dụng{" "}
                   <a href="/refactorings/simplifying-method-calls/decompose-conditional">
-                  Phân Rã Điều Kiện
+                    Phân Rã Điều Kiện
                   </a>
                   . Nếu vòng lặp cản trở, sử dụng{" "}
-                  <a href="/refactorings/composing-method/extract-method">Trích Xuất Phương Thức</a>.
+                  <a href="/refactorings/composing-method/extract-method">
+                    Trích Xuất Phương Thức
+                  </a>
+                  .
                 </p>
               </li>
             </ul>
@@ -153,14 +158,15 @@ const ContentLongMethod = () => {
             <ul>
               <li>
                 <p>
-                Trong tất cả các loại mã hướng đối tượng, các lớp có phương thức ngắn sẽ tồn tại lâu nhất. Phương thức hoặc hàm càng dài thì càng khó hiểu và bảo trì.
-
-
+                  Trong tất cả các loại mã hướng đối tượng, các lớp có phương
+                  thức ngắn sẽ tồn tại lâu nhất. Phương thức hoặc hàm càng dài
+                  thì càng khó hiểu và bảo trì.
                 </p>
               </li>
               <li>
                 <p>
-                Ngoài ra, các phương thức dài cung cấp nơi ẩn náu hoàn hảo cho mã trùng lặp không mong muốn.
+                  Ngoài ra, các phương thức dài cung cấp nơi ẩn náu hoàn hảo cho
+                  mã trùng lặp không mong muốn.
                 </p>
               </li>
             </ul>
@@ -177,10 +183,14 @@ const ContentLongMethod = () => {
             </figure>
             <h3>Hiệu Năng</h3>
             <p>
-            Liệu việc tăng số lượng phương thức có làm giảm hiệu suất như nhiều người vẫn tuyên bố không? Trong hầu hết các trường hợp, tác động là không đáng kể đến mức không cần phải lo lắng.
+              Liệu việc tăng số lượng phương thức có làm giảm hiệu suất như
+              nhiều người vẫn tuyên bố không? Trong hầu hết các trường hợp, tác
+              động là không đáng kể đến mức không cần phải lo lắng.
             </p>
             <p>
-            Hơn nữa, giờ đây khi bạn đã có mã nguồn rõ ràng và dễ hiểu, bạn sẽ dễ dàng tìm ra những phương pháp thực sự hiệu quả để tái cấu trúc mã và đạt được những cải thiện hiệu năng thực sự nếu cần.
+              Hơn nữa, giờ đây khi bạn đã có mã nguồn rõ ràng và dễ hiểu, bạn sẽ
+              dễ dàng tìm ra những phương pháp thực sự hiệu quả để tái cấu trúc
+              mã và đạt được những cải thiện hiệu năng thực sự nếu cần.
             </p>
 
             <div
@@ -223,11 +233,13 @@ const ContentLongMethod = () => {
               <div class="banner-text">
                 <h3 class="title">Mệt mỏi vì đọc quá nhiều?</h3>
                 <p class="big">
-                Không có gì lạ, phải mất {" "}
-                  <span class="blue">7 giờ</span> để đọc hết tất cả các văn bản ở đây.
+                  Không có gì lạ, phải mất <span class="blue">7 giờ</span> để
+                  đọc hết tất cả các văn bản ở đây.
                 </p>
                 <p>
-                Hãy thử khóa học tương tác của chúng tôi về tái cấu trúc. Nó cung cấp một cách tiếp cận bớt tẻ nhạt hơn để học những kiến thức mới.
+                  Hãy thử khóa học tương tác của chúng tôi về tái cấu trúc. Nó
+                  cung cấp một cách tiếp cận bớt tẻ nhạt hơn để học những kiến
+                  thức mới.
                 </p>
                 <a class="btn btn-secondary" href="/store/course">
                   <i class="fa fa-star" aria-hidden="true"></i> Cùng xem nào...
@@ -239,7 +251,11 @@ const ContentLongMethod = () => {
           <nav class="prev-next">
             <div class="next">
               <h4>ĐỌC TIẾP</h4>
-              <a rel="next" href="/refactoring/smells/bloaters/large-class" class="btn btn-primary">
+              <a
+                rel="next"
+                href="/refactoring/smells/bloaters/large-class"
+                class="btn btn-primary"
+              >
                 Lớp Lớn&nbsp;<span class="fa fa-arrow-right"></span>
               </a>
             </div>
@@ -277,13 +293,10 @@ const ContentLongMethod = () => {
               </div>
               <div class="banner-text banner-text-ru">
                 <p class="text-center">
-                Mùi mã này là một phần của{" "}
-                  <b>Khóa Học Tái Cấu Trúc</b>{" "}lớn hơn nhiều..
+                  Mùi mã này là một phần của <b>Khóa Học Tái Cấu Trúc</b> lớn
+                  hơn nhiều.
                 </p>
-                <a
-                  href="/store/course"
-                  class="btn btn-secondary btn-block"
-                >
+                <a href="/store/course" class="btn btn-secondary btn-block">
                   <i class="fa fa-star" aria-hidden="true"></i> Tìm hiểu thêm...
                 </a>
               </div>

@@ -150,7 +150,7 @@ const Sidebar = () => {
                       className="fa fa-fw fa-graduation-cap"
                       aria-hidden="true"
                     ></i>{" "}
-                    Khóa Học Tái Cấu Trúc
+                    Học Tái Cấu Trúc
                   </a>
                 </li>
               </ul>
@@ -286,75 +286,172 @@ const Sidebar = () => {
                             Lớp Lớn
                           </a>
                         </li>
-                        <li className="">
+                        <li
+                          className={
+                            location.pathname.includes("primitive-obsession")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
                           <a href="/refactoring/smells/bloaters/primitive-obsession">
                             Ám Ảnh Nguyên Thủy
                           </a>
                         </li>
-                        <li className="">
+                        <li
+                          className={
+                            location.pathname.includes("long-parameter-list")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
                           <a href="/refactoring/smells/bloaters/long-parameter-list">
                             Danh Sách Tham Số Dài
                           </a>
                         </li>
-                        <li className="">
+                        <li
+                          className={
+                            location.pathname.includes("data-clumps")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
                           <a href="/refactoring/smells/bloaters/data-clumps">
                             Cụm Dữ Liệu
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
+                    <li
+                      className={
+                        location.pathname.includes("oo-abusers")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/smells/oo-abusers"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
                       <a href="/refactoring/smells/oo-abusers">
                         Lạm Dụng Hướng Đối Tượng
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/smells/switch-statements.html">
-                            Операторы switch
+                        <li
+                          className={
+                            location.pathname.includes("switch-statements")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/oo-abusers/switch-statements">
+                            Câu lệnh Switch
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/temporary-field.html">
-                            Временное поле
+                        <li
+                          className={
+                            location.pathname.includes("temporary-field")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/oo-abusers/temporary-field">
+                            Trường Tạm Thời
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/refused-bequest.html">
-                            Отказ от наследства
+                        <li
+                          className={
+                            location.pathname.includes("refused-bequest")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/oo-abusers/refused-bequest">
+                            Từ Chối Thừa Kế
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/alternative-classNamees-with-different-interfaces.html">
-                            Альтернативные классы с разными интерфейсами
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "alternative-classes-with-different-interfaces"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces">
+                            Các Lớp Thay Thế Với Giao Diện Khác Nhau
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
+                    <li
+                      className={
+                        location.pathname.includes("change-preventers")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/smells/change-preventers"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
                       <a href="/refactoring/smells/change-preventers">
                         Các Yếu Tố Ngăn Cản Thay Đổi
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/smells/divergent-change.html">
-                            Расходящиеся модификации
+                        <li
+                          className={
+                            location.pathname.includes("divergent-change")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/change-preventers/divergent-change">
+                            Thay Đổi Phân Kỳ
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/shotgun-surgery.html">
-                            Стрельба дробью
+                        <li
+                          className={
+                            location.pathname.includes("shotgun-surgery")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/change-preventers/shotgun-surgery">
+                            Phẫu Thuật Súng Ngắn
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/parallel-inheritance-hierarchies.html">
-                            Параллельные иерархии наследования
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "parallel-inheritance-hierarchies"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/change-preventers/parallel-inheritance-hierarchies">
+                            Hệ Thống Kế Thừa Song Song
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
+                    <li
+                      className={
+                        location.pathname.includes("dispensables")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/smells/dispensables"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
                       <a href="/refactoring/smells/dispensables">
                         Thành Phần Dư Thừa
                       </a>

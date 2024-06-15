@@ -1,4 +1,4 @@
-const ContentLargeClass = () => {
+const ContentDataClumps = () => {
   return (
     <main
       role="main"
@@ -25,111 +25,94 @@ const ContentLargeClass = () => {
                 Mã Phình To
               </a>
             </div>
-            <h1 class="title">Lớp Lớn</h1>
+            <h1 class="title">Cụm Dữ Liệu</h1>
 
             {/* <script type="text/javascript">
-            // Shorten examples titles for users.
-            var h1 = document.getElementsByTagName("H1")[0];
-            if (h1.offsetHeight > 160) {
-              h1.className += " smaller";
-            }
+          // Shorten examples titles for users.
+          var h1 = document.getElementsByTagName("H1")[0];
+          if (h1.offsetHeight > 160) {
+            h1.className += " smaller";
+          }
 
-            // Small beautification for pattern examples.
-            var title = h1.innerHTML;
-            title = title.replace(
-              /^(Java|C\+\+|C#|PHP|Python|Ruby|Delphi): (.*)$/,
-              "<strong>$1:</strong> $2"
-            );
-            h1.innerHTML = title;
-          </script> */}
+          // Small beautification for pattern examples.
+          var title = h1.innerHTML;
+          title = title.replace(
+            /^(Java|C\+\+|C#|PHP|Python|Ruby|Delphi): (.*)$/,
+            "<strong>$1:</strong> $2"
+          );
+          h1.innerHTML = title;
+        </script> */}
 
             {/* <div class="aka">
-            Также известен как:
-            <span style={{display: "inline-block"}} >Large Class</span>
-          </div> */}
+              Также известен как:
+              <span style={{ display: "inline-block" }}>Data Clumps</span>
+            </div> */}
 
-            <h3>Dấu Hiệu và Triệu Chứng</h3>
+            <h3>Dấu hiệu và Triệu chứng</h3>
             <p>
-              Một lớp chứa quá nhiều trường (fields), phương thức (methods) và
-              dòng code.
+              Đôi khi các phần khác nhau của mã nguồn chứa các nhóm biến giống
+              hệt nhau (chẳng hạn như các tham số để kết nối với cơ sở dữ liệu).
+              Những cụm này nên được chuyển thành các lớp riêng của chúng.
             </p>
             <figure class="image">
               <img
                 width="500"
                 height="300"
-                src="/images/refactoring/content/smells/large-class-01eaa7.png?id=acac82f25cc90aaa413c2daefebf0e4b"
-                //   srcset="
-                //     /images/refactoring/content/smells/large-class-01-2x.png?id=44aea94399b8bd6398a01b46b5bc7f29 2x
-                //   "
+                src="/images/refactoring/content/smells/data-clumps-018c21.png?id=9d8a38ce942720cee728797eba695a2f"
+                //     srcset="
+                //   /images/refactoring/content/smells/data-clumps-01-2x.png?id=64c7f4113e3c06f10dbec825833fa190 2x
+                // "
               />
             </figure>
-            <h3>Nguyên Nhân Của Vấn Đề</h3>
+            <h3>Nguyên nhân của vấn đề</h3>
             <p>
-              Các lớp thường bắt đầu nhỏ. Nhưng theo thời gian, chúng trở nên
-              phình to khi chương trình phát triển.
+              Thường thì các nhóm dữ liệu này xuất hiện do cấu trúc chương trình
+              kém hoặc do "lập trình sao chép dán".
             </p>
             <p>
-              Tương tự như trường hợp của các phương thức dài, các lập trình
-              viên thường thấy việc đặt một tính năng mới vào một lớp hiện có dễ
-              dàng hơn về mặt tinh thần so với việc tạo một lớp mới cho tính
-              năng đó.
+              Nếu bạn muốn chắc chắn liệu một số dữ liệu có phải là một cụm dữ
+              liệu hay không, hãy thử xóa một trong các giá trị dữ liệu và xem
+              liệu các giá trị khác còn hợp lý hay không. Nếu không phải vậy, đó
+              là dấu hiệu tốt cho thấy nhóm biến này nên được kết hợp thành một
+              đối tượng.
             </p>
-            <figure class="image">
-              <img
-                width="500"
-                height="300"
-                src="/images/refactoring/content/smells/large-class-027a0b.png?id=973b37334ae57489945a88b9327f81e3"
-                //   srcset="
-                //     /images/refactoring/content/smells/large-class-02-2x.png?id=f51627abdfb96fad29cb114d00795fec 2x
-                //   "
-                loading="lazy"
-              />
-            </figure>
-            <h3>Cách Xử Lý</h3>
-            <p>
-              Khi một lớp đang gánh vác quá nhiều trách nhiệm (chức năng), hãy
-              nghĩ đến việc chia nhỏ nó:
-            </p>
+            <h3>Cách khắc phục</h3>
             <ul>
               <li>
                 <p>
+                  Nếu dữ liệu lặp lại bao gồm các trường của một lớp, hãy sử
+                  dụng{" "}
                   <a href="/refactorings/moving-features-between-objects/extract-class">
-                    Trích Xuất Lớp
+                    Tách Lớp
                   </a>{" "}
-                  hữu ích nếu một phần hành vi của lớp lớn có thể được tách ra
-                  thành một thành phần riêng biệt.
+                  để di chuyển các trường này vào lớp riêng của chúng.
                 </p>
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/dealing-with-generalization/extract-subclass">
-                    Trích Xuất Lớp Con
+                  Nếu các cụm dữ liệu giống nhau được truyền vào tham số của các
+                  phương thức, hãy sử dụng{" "}
+                  <a href="/refactorings/simplifying-method-calls/introduce-parameter-object">
+                    Giới Thiệu Đối Tượng Tham Số
                   </a>{" "}
-                  hữu ích nếu một phần hành vi của lớp lớn có thể được thực hiện
-                  theo nhiều cách khác nhau hoặc được sử dụng trong những trường
-                  hợp hiếm gặp.
+                  để tách chúng ra thành một lớp.
                 </p>
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/dealing-with-generalization/extract-interface">
-                    Trích Xuất Giao Diện
+                  Nếu một số dữ liệu được truyền vào các phương thức khác, hãy
+                  cân nhắc việc truyền toàn bộ đối tượng dữ liệu vào phương thức
+                  thay vì chỉ truyền các trường riêng lẻ.{" "}
+                  <a href="/refactorings/simplifying-method-calls/preserve-whole-object">
+                    Bảo Tồn Toàn Bộ Đối Tượng
                   </a>{" "}
-                  hữu ích nếu cần có một danh sách các hoạt động và hành vi mà
-                  client có thể sử dụng.
+                  sẽ giúp thực hiện điều này.
                 </p>
               </li>
               <li>
                 <p>
-                  Nếu một lớp lớn chịu trách nhiệm về giao diện đồ họa, bạn có
-                  thể thử chuyển một số dữ liệu và hành vi của nó sang một đối
-                  tượng miền riêng biệt. Khi làm như vậy, có thể cần phải lưu
-                  trữ các bản sao của một số dữ liệu ở hai nơi và giữ cho dữ
-                  liệu nhất quán. Kỹ thuật{" "}
-                  <a href="/refactorings/organizing-data/duplicate-observed-data">
-                    Sao Chép Dữ Liệu Quan Sát
-                  </a>{" "}
-                  cung cấp một cách để làm điều này.
+                  Hãy xem xét mã nguồn được sử dụng bởi các trường này. Có thể
+                  sẽ là một ý tưởng tốt để chuyển mã này vào một lớp dữ liệu.
                 </p>
               </li>
             </ul>
@@ -137,9 +120,9 @@ const ContentLargeClass = () => {
               <img
                 width="500"
                 height="300"
-                src="/images/refactoring/content/smells/large-class-030a79.png?id=f0a0109f731dbc420ffe385cb658f0de"
-                // srcset="
-                //   /images/refactoring/content/smells/large-class-03-2x.png?id=2e497ff65fc035f0d51f908361daee78 2x
+                src="/images/refactoring/content/smells/data-clumps-02ec1e.png?id=cfb0a8fa64a983473dd31527e28ae158"
+                //     srcset="
+                //   /images/refactoring/content/smells/data-clumps-02-2x.png?id=195f24da42dbd21508aa9ef46a57abba 2x
                 // "
                 loading="lazy"
               />
@@ -148,15 +131,32 @@ const ContentLargeClass = () => {
             <ul>
               <li>
                 <p>
-                  Tái cấu trúc các lớp này giúp các nhà phát triển không cần
-                  phải nhớ một số lượng lớn các thuộc tính của một lớp.
+                  Cải thiện sự hiểu biết và tổ chức mã nguồn. Các thao tác trên
+                  dữ liệu cụ thể giờ đây được tập trung ở một chỗ, thay vì nằm
+                  rải rác khắp mã nguồn.
                 </p>
               </li>
               <li>
-                <p>
-                  Trong nhiều trường hợp, việc chia nhỏ các lớp lớn thành các
-                  phần giúp tránh được việc lặp lại mã và chức năng.
-                </p>
+                <p>Giảm kích thước mã nguồn.</p>
+              </li>
+            </ul>
+            <figure class="image">
+              <img
+                width="500"
+                height="300"
+                src="/images/refactoring/content/smells/data-clumps-038987.png?id=c170bbdea77b7d4a26947ef328b70adc"
+                //     srcset="
+                //   /images/refactoring/content/smells/data-clumps-03-2x.png?id=2b4a70e09a6236715a9bc4bd4663508b 2x
+                // "
+                loading="lazy"
+              />
+            </figure>
+            <h3>Khi nào nên bỏ qua</h3>
+            <ul>
+              <li>
+                Truyền toàn bộ đối tượng vào tham số của một phương thức, thay
+                vì chỉ truyền các giá trị của nó (kiểu nguyên thủy), có thể tạo
+                ra sự phụ thuộc không mong muốn giữa hai lớp.
               </li>
             </ul>
 
@@ -171,8 +171,8 @@ const ContentLargeClass = () => {
                   <video
                     id="banner-zzz"
                     loop
-                    autoPlay
                     muted
+                    autoPlay
                     playsinline
                     width="200"
                     height="200"
@@ -190,12 +190,12 @@ const ContentLargeClass = () => {
                 </a>
               </div>
               {/* <script>
-              if (/CPU (?:iPhone )?OS [1-9]_/.test(navigator.userAgent)) {
-                // Don't autoplay on old iOS, since it doesn not support playsinline.
-              } else {
-                document.getElementById("banner-zzz").play();
-              }
-            </script> */}
+            if (/CPU (?:iPhone )?OS [1-9]_/.test(navigator.userAgent)) {
+              // Don't autoplay on old iOS, since it doesn not support playsinline.
+            } else {
+              document.getElementById("banner-zzz").play();
+            }
+          </script> */}
 
               <div class="banner-text">
                 <h3 class="title">Mệt mỏi vì đọc quá nhiều?</h3>
@@ -220,10 +220,10 @@ const ContentLargeClass = () => {
               <h4>ĐỌC TIẾP</h4>
               <a
                 rel="next"
-                href="/refactoring/smells/bloaters/primitive-obsession"
+                href="/refactoring/smells/oo-abusers"
                 class="btn btn-primary"
               >
-                Ám Ảnh Nguyên Thủy&nbsp;
+                Lạm dụng Hướng đối tượng&nbsp;
                 <span class="fa fa-arrow-right"></span>
               </a>
             </div>
@@ -231,10 +231,11 @@ const ContentLargeClass = () => {
               <h4>TRỞ LẠI</h4>
               <a
                 rel="prev"
-                href="/refactoring/smells/bloaters/long-method"
+                href="/refactoring/smells/bloaters/long-parameter-list"
                 class="btn btn-default"
               >
-                <span class="fa fa-arrow-left"></span>&nbsp;Phương Thức Dài
+                <span class="fa fa-arrow-left"></span>&nbsp;Danh Sách Tham Số
+                Dài
               </a>
             </div>
           </nav>
@@ -276,4 +277,4 @@ const ContentLargeClass = () => {
   );
 };
 
-export default ContentLargeClass;
+export default ContentDataClumps;

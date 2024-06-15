@@ -1,4 +1,4 @@
-const ContentLargeClass = () => {
+const ContentTemporaryField = () => {
   return (
     <main
       role="main"
@@ -21,115 +21,98 @@ const ContentLargeClass = () => {
                 Mùi Mã
               </a>{" "}
               /{" "}
-              <a class="type" href="/refactoring/smells/bloaters">
-                Mã Phình To
+              <a class="type" href="/refactoring/smells/oo-abusers">
+                Lạm dụng Hướng Đối Tượng
               </a>
             </div>
-            <h1 class="title">Lớp Lớn</h1>
+            <h1 class="title">Trường Tạm Thời</h1>
 
             {/* <script type="text/javascript">
-            // Shorten examples titles for users.
-            var h1 = document.getElementsByTagName("H1")[0];
-            if (h1.offsetHeight > 160) {
-              h1.className += " smaller";
-            }
+          // Shorten examples titles for users.
+          var h1 = document.getElementsByTagName("H1")[0];
+          if (h1.offsetHeight > 160) {
+            h1.className += " smaller";
+          }
 
-            // Small beautification for pattern examples.
-            var title = h1.innerHTML;
-            title = title.replace(
-              /^(Java|C\+\+|C#|PHP|Python|Ruby|Delphi): (.*)$/,
-              "<strong>$1:</strong> $2"
-            );
-            h1.innerHTML = title;
-          </script> */}
+          // Small beautification for pattern examples.
+          var title = h1.innerHTML;
+          title = title.replace(
+            /^(Java|C\+\+|C#|PHP|Python|Ruby|Delphi): (.*)$/,
+            "<strong>$1:</strong> $2"
+          );
+          h1.innerHTML = title;
+        </script> */}
 
             {/* <div class="aka">
-            Также известен как:
-            <span style={{display: "inline-block"}} >Large Class</span>
-          </div> */}
+              Также известен как:
+              <span style={{ display: "inline-block" }}>Temporary Field</span>
+            </div> */}
 
-            <h3>Dấu Hiệu và Triệu Chứng</h3>
+            <h3>Dấu hiệu và Triệu chứng</h3>
             <p>
-              Một lớp chứa quá nhiều trường (fields), phương thức (methods) và
-              dòng code.
+              Các trường tạm thời chỉ nhận giá trị (và do đó cần thiết cho các
+              đối tượng) dưới một số hoàn cảnh nhất định. Ngoài những hoàn cảnh
+              này, chúng trống rỗng.
             </p>
             <figure class="image">
               <img
                 width="500"
                 height="300"
-                src="/images/refactoring/content/smells/large-class-01eaa7.png?id=acac82f25cc90aaa413c2daefebf0e4b"
-                //   srcset="
-                //     /images/refactoring/content/smells/large-class-01-2x.png?id=44aea94399b8bd6398a01b46b5bc7f29 2x
-                //   "
+                src="/images/refactoring/content/smells/temporary-field-01e767.png?id=5e30a8144171693ee4894091762b9742"
+                //     srcset="
+                //   /images/refactoring/content/smells/temporary-field-01-2x.png?id=1cf05ea67f1e3bd1c1f634af7408f67c 2x
+                // "
               />
             </figure>
-            <h3>Nguyên Nhân Của Vấn Đề</h3>
+            <h3>Nguyên nhân của vấn đề</h3>
             <p>
-              Các lớp thường bắt đầu nhỏ. Nhưng theo thời gian, chúng trở nên
-              phình to khi chương trình phát triển.
+              Thường thì các trường tạm thời được tạo ra để sử dụng trong một
+              thuật toán yêu cầu một lượng lớn đầu vào. Vì vậy, thay vì tạo ra
+              một số lượng lớn các tham số trong phương thức, lập trình viên
+              quyết định tạo các trường cho dữ liệu này trong lớp. Các trường
+              này chỉ được sử dụng trong thuật toán và không được sử dụng vào
+              thời gian còn lại.
             </p>
             <p>
-              Tương tự như trường hợp của các phương thức dài, các lập trình
-              viên thường thấy việc đặt một tính năng mới vào một lớp hiện có dễ
-              dàng hơn về mặt tinh thần so với việc tạo một lớp mới cho tính
-              năng đó.
+              Loại mã nguồn này rất khó hiểu. Bạn mong đợi thấy dữ liệu trong
+              các trường của đối tượng nhưng vì lý do nào đó chúng hầu như luôn
+              trống rỗng.
             </p>
             <figure class="image">
               <img
                 width="500"
                 height="300"
-                src="/images/refactoring/content/smells/large-class-027a0b.png?id=973b37334ae57489945a88b9327f81e3"
-                //   srcset="
-                //     /images/refactoring/content/smells/large-class-02-2x.png?id=f51627abdfb96fad29cb114d00795fec 2x
-                //   "
+                src="/images/refactoring/content/smells/temporary-field-02bc27.png?id=2cf98e02ffb0c1d36a98d48ba7bc5c45"
+                //     srcset="
+                //   /images/refactoring/content/smells/temporary-field-02-2x.png?id=6c8e4384d9029cd3ec84cd330d5871eb 2x
+                // "
                 loading="lazy"
               />
             </figure>
-            <h3>Cách Xử Lý</h3>
-            <p>
-              Khi một lớp đang gánh vác quá nhiều trách nhiệm (chức năng), hãy
-              nghĩ đến việc chia nhỏ nó:
-            </p>
+            <h3>Cách khắc phục</h3>
             <ul>
               <li>
                 <p>
+                  Các trường tạm thời và tất cả mã nguồn thao tác trên chúng có
+                  thể được đưa vào một lớp riêng biệt thông qua{" "}
                   <a href="/refactorings/moving-features-between-objects/extract-class">
-                    Trích Xuất Lớp
-                  </a>{" "}
-                  hữu ích nếu một phần hành vi của lớp lớn có thể được tách ra
-                  thành một thành phần riêng biệt.
+                    Tách Lớp
+                  </a>
+                  . Nói cách khác, bạn đang tạo ra một đối tượng phương thức,
+                  đạt được kết quả tương tự như khi bạn thực hiện{" "}
+                  <a href="/refactorings/composing-methods/replace-method-with-method-object">
+                    Thay Phương Thức bằng Đối Tượng Phương Thức
+                  </a>
+                  .
                 </p>
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/dealing-with-generalization/extract-subclass">
-                    Trích Xuất Lớp Con
+                  <a href="/refactorings/simplifying-conditional-expressions/introduce-null-object">
+                    Giới Thiệu Đối Tượng Null
                   </a>{" "}
-                  hữu ích nếu một phần hành vi của lớp lớn có thể được thực hiện
-                  theo nhiều cách khác nhau hoặc được sử dụng trong những trường
-                  hợp hiếm gặp.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <a href="/refactorings/dealing-with-generalization/extract-interface">
-                    Trích Xuất Giao Diện
-                  </a>{" "}
-                  hữu ích nếu cần có một danh sách các hoạt động và hành vi mà
-                  client có thể sử dụng.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Nếu một lớp lớn chịu trách nhiệm về giao diện đồ họa, bạn có
-                  thể thử chuyển một số dữ liệu và hành vi của nó sang một đối
-                  tượng miền riêng biệt. Khi làm như vậy, có thể cần phải lưu
-                  trữ các bản sao của một số dữ liệu ở hai nơi và giữ cho dữ
-                  liệu nhất quán. Kỹ thuật{" "}
-                  <a href="/refactorings/organizing-data/duplicate-observed-data">
-                    Sao Chép Dữ Liệu Quan Sát
-                  </a>{" "}
-                  cung cấp một cách để làm điều này.
+                  và tích hợp nó thay cho mã điều kiện đã được sử dụng để kiểm
+                  tra sự tồn tại của các giá trị trường tạm thời.
                 </p>
               </li>
             </ul>
@@ -137,27 +120,16 @@ const ContentLargeClass = () => {
               <img
                 width="500"
                 height="300"
-                src="/images/refactoring/content/smells/large-class-030a79.png?id=f0a0109f731dbc420ffe385cb658f0de"
-                // srcset="
-                //   /images/refactoring/content/smells/large-class-03-2x.png?id=2e497ff65fc035f0d51f908361daee78 2x
+                src="/images/refactoring/content/smells/temporary-field-032ad0.png?id=cf0e1c1e2a19745d23ca9e1d917d45cc"
+                //     srcset="
+                //   /images/refactoring/content/smells/temporary-field-03-2x.png?id=c633fd664958307bf296b09de72959dd 2x
                 // "
                 loading="lazy"
               />
             </figure>
-            <h3>Lợi Ích</h3>
+            <h3>Lợi ích</h3>
             <ul>
-              <li>
-                <p>
-                  Tái cấu trúc các lớp này giúp các nhà phát triển không cần
-                  phải nhớ một số lượng lớn các thuộc tính của một lớp.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Trong nhiều trường hợp, việc chia nhỏ các lớp lớn thành các
-                  phần giúp tránh được việc lặp lại mã và chức năng.
-                </p>
-              </li>
+              <li>Mã nguồn rõ ràng và tổ chức tốt hơn.</li>
             </ul>
 
             <div
@@ -171,11 +143,11 @@ const ContentLargeClass = () => {
                   <video
                     id="banner-zzz"
                     loop
-                    autoPlay
                     muted
                     playsinline
                     width="200"
                     height="200"
+                    autoPlay
                   >
                     <source
                       src="/images/refactoring/banners/tired-of-reading-banner-1xdc3d.mp4?id=7fa8f9682afda143c2a491c6ab1c1e56"
@@ -190,12 +162,12 @@ const ContentLargeClass = () => {
                 </a>
               </div>
               {/* <script>
-              if (/CPU (?:iPhone )?OS [1-9]_/.test(navigator.userAgent)) {
-                // Don't autoplay on old iOS, since it doesn not support playsinline.
-              } else {
-                document.getElementById("banner-zzz").play();
-              }
-            </script> */}
+            if (/CPU (?:iPhone )?OS [1-9]_/.test(navigator.userAgent)) {
+              // Don't autoplay on old iOS, since it doesn not support playsinline.
+            } else {
+              document.getElementById("banner-zzz").play();
+            }
+          </script> */}
 
               <div class="banner-text">
                 <h3 class="title">Mệt mỏi vì đọc quá nhiều?</h3>
@@ -220,10 +192,10 @@ const ContentLargeClass = () => {
               <h4>ĐỌC TIẾP</h4>
               <a
                 rel="next"
-                href="/refactoring/smells/bloaters/primitive-obsession"
+                href="/refactoring/smells/oo-abusers/refused-bequest"
                 class="btn btn-primary"
               >
-                Ám Ảnh Nguyên Thủy&nbsp;
+                Từ Chối Thừa Kế&nbsp;
                 <span class="fa fa-arrow-right"></span>
               </a>
             </div>
@@ -231,10 +203,10 @@ const ContentLargeClass = () => {
               <h4>TRỞ LẠI</h4>
               <a
                 rel="prev"
-                href="/refactoring/smells/bloaters/long-method"
+                href="/refactoring/smells/oo-abusers/switch-statements"
                 class="btn btn-default"
               >
-                <span class="fa fa-arrow-left"></span>&nbsp;Phương Thức Dài
+                <span class="fa fa-arrow-left"></span>&nbsp;Câu Lệnh Switch
               </a>
             </div>
           </nav>
@@ -276,4 +248,4 @@ const ContentLargeClass = () => {
   );
 };
 
-export default ContentLargeClass;
+export default ContentTemporaryField;

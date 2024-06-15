@@ -18,6 +18,19 @@ import SmellPage from "./pages/Smell";
 import BloatersPage from "./pages/smell/bloaters/bloaters";
 import LongMethodPage from "./pages/smell/bloaters/long-method";
 import LargeClassPage from "./pages/smell/bloaters/large-class";
+import PrimitiveObsessionPage from "./pages/smell/bloaters/primitive-obsession";
+import LongParameterListPage from "./pages/smell/bloaters/long-parameter-list";
+import DataClumpsPage from "./pages/smell/bloaters/data-clumps";
+import OoAbusersPage from "./pages/smell/oo-abusers/oo-abusers";
+import SwitchStatementsPage from "./pages/smell/oo-abusers/switch-statements";
+import TemporaryFieldPage from "./pages/smell/oo-abusers/temporary-field";
+import RefusedBequestPage from "./pages/smell/oo-abusers/refused-bequest";
+import AlternativeClassesWithDifferentInterfacesPage from "./pages/smell/oo-abusers/AlternativeClassesWithDifferentInterfaces";
+import ChangePreventersPage from "./pages/smell/change-preventers/change-preventers";
+import DivergentChangePage from "./pages/smell/change-preventers/divergent-change";
+import ShotgunSurgeryPage from "./pages/smell/change-preventers/shotgun-surgery";
+import ParallelInheritanceHierarchiesPage from "./pages/smell/change-preventers/parallel-inheritance-hierarchies";
+import DispensablesPage from "./pages/smell/dispensables/dispensables";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -74,6 +87,58 @@ const router = createBrowserRouter([
   {
     path: "/refactoring/smells/bloaters/large-class",
     element: <LargeClassPage />,
+  },
+  {
+    path: "/refactoring/smells/bloaters/primitive-obsession",
+    element: <PrimitiveObsessionPage />,
+  },
+  {
+    path: "/refactoring/smells/bloaters/long-parameter-list",
+    element: <LongParameterListPage />,
+  },
+  {
+    path: "/refactoring/smells/bloaters/data-clumps",
+    element: <DataClumpsPage />,
+  },
+  {
+    path: "/refactoring/smells/oo-abusers",
+    element: <OoAbusersPage />,
+  },
+  {
+    path: "/refactoring/smells/oo-abusers/switch-statements",
+    element: <SwitchStatementsPage />,
+  },
+  {
+    path: "/refactoring/smells/oo-abusers/temporary-field",
+    element: <TemporaryFieldPage />,
+  },
+  {
+    path: "/refactoring/smells/oo-abusers/refused-bequest",
+    element: <RefusedBequestPage />,
+  },
+  {
+    path: "/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces",
+    element: <AlternativeClassesWithDifferentInterfacesPage />,
+  },
+  {
+    path: "/refactoring/smells/change-preventers",
+    element: <ChangePreventersPage />,
+  },
+  {
+    path: "/refactoring/smells/change-preventers/divergent-change",
+    element: <DivergentChangePage />,
+  },
+  {
+    path: "/refactoring/smells/change-preventers/shotgun-surgery",
+    element: <ShotgunSurgeryPage />,
+  },
+  {
+    path: "/refactoring/smells/change-preventers/parallel-inheritance-hierarchies",
+    element: <ParallelInheritanceHierarchiesPage />,
+  },
+  {
+    path: "/refactoring/smells/dispensables",
+    element: <DispensablesPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
