@@ -88,7 +88,7 @@ const ContentRefusedBequest = () => {
                 <p>
                   Nếu việc kế thừa không có ý nghĩa và lớp con thực sự không có
                   gì chung với lớp cha, hãy loại bỏ kế thừa và thay thế bằng{" "}
-                  <a href="/refactorings/dealing-with-generalization/replace-inheritance-with-delegation">
+                  <a href="/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation">
                     Ủy Quyền
                   </a>
                   .
@@ -100,7 +100,7 @@ const ContentRefusedBequest = () => {
                   thức không cần thiết trong lớp con. Tách tất cả các trường và
                   phương thức cần thiết cho lớp con từ lớp cha, đưa chúng vào
                   một lớp cha mới và đặt cả hai lớp kế thừa từ lớp này (
-                  <a href="/refactorings/dealing-with-generalization/extract-superclass">
+                  <a href="/refactoring/techniques/dealing-with-generalization/extract-superclass">
                     Tách Lớp Cha
                   </a>
                   ).

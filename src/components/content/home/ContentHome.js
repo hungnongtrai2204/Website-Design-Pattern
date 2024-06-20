@@ -174,7 +174,7 @@ const ContentHome = () => {
           <div className="container-fluid container-headline">
             <div className="row">
               <div className="col-md-6">
-                <a href="ru/design-patterns.html">
+                <a href="/design-patterns">
                   <img
                     className="index-img"
                     loading="lazy"

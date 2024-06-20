@@ -87,7 +87,7 @@ const ContentDivergentChange = () => {
               <li>
                 <p>
                   Phân chia hành vi của lớp bằng cách{" "}
-                  <a href="/refactorings/moving-features-between-objects/extract-class">
+                  <a href="/refactoring/techniques/moving-features-between-objects/extract-class">
                     Tách Lớp
                   </a>
                   .
@@ -97,11 +97,11 @@ const ContentDivergentChange = () => {
                 <p>
                   Nếu các lớp khác nhau có cùng hành vi, bạn có thể muốn kết hợp
                   các lớp thông qua kế thừa (
-                  <a href="/refactorings/dealing-with-generalization/extract-superclass">
+                  <a href="/refactoring/techniques/dealing-with-generalization/extract-superclass">
                     Tách Lớp Cha
                   </a>{" "}
                   và{" "}
-                  <a href="/refactorings/dealing-with-generalization/extract-subclass">
+                  <a href="/refactoring/techniques/dealing-with-generalization/extract-subclass">
                     Tách Lớp Con
                   </a>
                   ).

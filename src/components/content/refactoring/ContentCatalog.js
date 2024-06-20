@@ -117,26 +117,26 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/alternative-classNamees-with-different-interfaces">
+                      <a href="/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces">
                         Các Lớp Thay Thế Với Giao Diện Khác Nhau
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/refused-bequest">
+                      <a href="/refactoring/smells/oo-abusers/refused-bequest">
                         Từ Chối Thừa Kế
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/switch-statements">
+                      <a href="/refactoring/smells/oo-abusers/switch-statements">
                         Câu Lệnh Switch
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/temporary-field">
+                      <a href="/refactoring/smells/oo-abusers/temporary-field">
                         Trường Tạm Thời
                       </a>
                     </li>
@@ -176,21 +176,21 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/divergent-change">
+                      <a href="/refactoring/smells/change-preventers/divergent-change">
                         Thay Đổi Phân Kỳ
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/parallel-inheritance-hierarchies">
+                      <a href="/refactoring/smells/change-preventers/parallel-inheritance-hierarchies">
                         Cấu Trúc Kế Thừa Song Song
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/shotgun-surgery">
+                      <a href="/refactoring/smells/change-preventers/shotgun-surgery">
                         Phẫu Thuật Bằng Súng Săn
                       </a>
                     </li>
@@ -228,30 +228,36 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/comments">Chú Thích</a>
+                      <a href="/refactoring/smells/dispensables/comments">
+                        Chú Thích
+                      </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/duplicate-code">
+                      <a href="/refactoring/smells/dispensables/duplicate-code">
                         Mã Trùng Lặp
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/data-class">Lớp Dữ Liệu</a>
+                      <a href="/refactoring/smells/dispensables/data-class">
+                        Lớp Dữ Liệu
+                      </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/dead-code">Mã Chết</a>
+                      <a href="/refactoring/smells/dispensables/dead-code">
+                        Mã Chết
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/lazy-class">
+                      <a href="/refactoring/smells/dispensables/lazy-class">
                         Lớp Lười Biếng
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/speculative-generality">
+                      <a href="/refactoring/smells/dispensables/speculative-generality">
                         Tính Tổng Quát Phỏng Đoán
                       </a>
                     </li>
@@ -294,31 +300,31 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/feature-envy">
+                      <a href="/refactoring/smells/couplers/feature-envy">
                         Ganh Tỵ Tính Năng
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/inappropriate-intimacy">
+                      <a href="/refactoring/smells/couplers/inappropriate-intimacy">
                         Quan Hệ Quá Gần Gũi
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/incomplete-library-class">
+                      <a href="/refactoring/smells/couplers/incomplete-library-class">
                         Lớp Thư Viện Không Hoàn Chỉnh
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/message-chains">
+                      <a href="/refactoring/smells/couplers/message-chains">
                         Chuỗi Thông Điệp
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/middle-man">
+                      <a href="/refactoring/smells/couplers/middle-man">
                         Người Trung Gian
                       </a>
                     </li>
@@ -349,7 +355,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="composing-methods">
-                  <a href="/techniques/composing-methods">
+                  <a href="/refactoring/techniques/composing-methods">
                     Sắp Xếp Phương Thức
                   </a>
                 </h3>
@@ -371,41 +377,53 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/extract-method">Trích Xuất Phương Thức</a>
+                      <a href="/refactoring/techniques/composing-methods/extract-method">
+                        Trích Xuất Phương Thức
+                      </a>
                     </li>
                     <li>
-                      <a href="/inline-method">Gộp Phương Thức</a>
+                      <a href="/refactoring/techniques/composing-methods/inline-method">
+                        Gộp Phương Thức
+                      </a>
                     </li>
                     <li>
-                      <a href="/extract-variable">Trích Xuất Biến</a>
+                      <a href="/refactoring/techniques/composing-methods/extract-variable">
+                        Trích Xuất Biến
+                      </a>
                     </li>
                     <li>
-                      <a href="/inline-temp">Gộp Biến Tạm</a>
+                      <a href="/refactoring/techniques/composing-methods/inline-temp">
+                        Gộp Biến Tạm
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/replace-temp-with-query">
+                      <a href="/refactoring/techniques/composing-methods/replace-temp-with-query">
                         Thay Thế Biến Tạm Bằng Truy Vấn
                       </a>
                     </li>
                     <li>
-                      <a href="/split-temporary-variable">Tách Biến Tạm Thời</a>
+                      <a href="/refactoring/techniques/composing-methods/split-temporary-variable">
+                        Tách Biến Tạm Thời
+                      </a>
                     </li>
                     <li>
-                      <a href="/remove-assignments-to-parameters">
+                      <a href="/refactoring/techniques/composing-methods/remove-assignments-to-parameters">
                         Loại Bỏ Gán Giá Trị Cho Tham Số
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/replace-method-with-method-object">
+                      <a href="/refactoring/techniques/composing-methods/replace-method-with-method-object">
                         Thay Thế Phương Thức Bằng Đối Tượng Phương Thức
                       </a>
                     </li>
                     <li>
-                      <a href="/substitute-algorithm">Thay Thế Thuật Toán</a>
+                      <a href="/refactoring/techniques/composing-methods/substitute-algorithm">
+                        Thay Thế Thuật Toán
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -430,7 +448,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="moving-features-between-objects">
-                  <a href="techniques/moving-features-between-objects.html">
+                  <a href="/refactoring/techniques/moving-features-between-objects">
                     Di Chuyển Tính Năng Giữa Các Đối Tượng
                   </a>
                 </h3>
@@ -448,34 +466,46 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/move-method">Di Chuyển Phương Thức</a>
+                      <a href="/refactoring/techniques/moving-features-between-objects/move-method">
+                        Di Chuyển Phương Thức
+                      </a>
                     </li>
                     <li>
-                      <a href="/move-field">Di chuyển trường</a>
+                      <a href="/refactoring/techniques/moving-features-between-objects/move-field">
+                        Di chuyển trường
+                      </a>
                     </li>
                     <li>
-                      <a href="/extract-class">Trích xuất lớp</a>
+                      <a href="/refactoring/techniques/moving-features-between-objects/extract-class">
+                        Trích xuất lớp
+                      </a>
                     </li>
                     <li>
-                      <a href="/inline-class">Gộp lớp</a>
+                      <a href="/refactoring/techniques/moving-features-between-objects/inline-class">
+                        Gộp lớp
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/hide-delegate">Ẩn ủy nhiệm</a>
+                      <a href="/refactoring/techniques/moving-features-between-objects/hide-delegate">
+                        Ẩn ủy nhiệm
+                      </a>
                     </li>
                     <li>
-                      <a href="/remove-middle-man">Loại bỏ trung gian</a>
+                      <a href="/refactoring/techniques/moving-features-between-objects/remove-middle-man">
+                        Loại bỏ trung gian
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/introduce-foreign-method">
+                      <a href="/refactoring/techniques/moving-features-between-objects/introduce-foreign-method">
                         Giới thiệu phương thức ngoại lai
                       </a>
                     </li>
                     <li>
-                      <a href="/introduce-local-extension">
+                      <a href="/refactoring/techniques/moving-features-between-objects/introduce-local-extension">
                         Giới thiệu phần mở rộng cục bộ
                       </a>
                     </li>
@@ -502,7 +532,9 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="organizing-data">
-                  <a href="/techniques/organizing-data">Tổ Chức Dữ Liệu</a>
+                  <a href="/refactoring/techniques/organizing-data">
+                    Tổ Chức Dữ Liệu
+                  </a>
                 </h3>
                 <div className="annotation">
                   <p>
@@ -516,75 +548,81 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/change-value-to-reference">
+                      <a href="/refactoring/techniques/organizing-data/change-value-to-reference">
                         Chuyển Giá Trị Thành Tham Chiếu
                       </a>
                     </li>
                     <li>
-                      <a href="/change-reference-to-value">
+                      <a href="/refactoring/techniques/organizing-data/change-reference-to-value">
                         Chuyển Tham Chiếu Thành Giá Trị
                       </a>
                     </li>
                     <li>
-                      <a href="/duplicate-observed-data">
+                      <a href="/refactoring/techniques/organizing-data/duplicate-observed-data">
                         Sao Chép Dữ Liệu Quan Sát
                       </a>
                     </li>
                     <li>
-                      <a href="/self-encapsulate-field">Tự Đóng Gói Trường</a>
+                      <a href="/refactoring/techniques/organizing-data/self-encapsulate-field">
+                        Tự Đóng Gói Trường
+                      </a>
                     </li>
                     <li>
-                      <a href="/replace-data-value-with-object">
+                      <a href="/refactoring/techniques/organizing-data/replace-data-value-with-object">
                         Thay Thế Giá Trị Dữ Liệu Bằng Đối Tượng
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-array-with-object">
+                      <a href="/refactoring/techniques/organizing-data/replace-array-with-object">
                         Thay Thế Mảng Bằng Đối Tượng
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/change-unidirectional-association-to-bidirectional">
+                      <a href="/refactoring/techniques/organizing-data/change-unidirectional-association-to-bidirectional">
                         Chuyển Mối Liên Kết Một Chiều Thành Hai Chiều
                       </a>
                     </li>
                     <li>
-                      <a href="/change-bidirectional-association-to-unidirectional">
+                      <a href="/refactoring/techniques/organizing-data/change-bidirectional-association-to-unidirectional">
                         Chuyển Mối Liên Kết Hai Chiều Thành Một Chiều
                       </a>
                     </li>
                     <li>
-                      <a href="/encapsulate-field">Đóng Gói Trường</a>
+                      <a href="/refactoring/techniques/organizing-data/encapsulate-field">
+                        Đóng Gói Trường
+                      </a>
                     </li>
                     <li>
-                      <a href="/encapsulate-collection">Đóng Gói Tập Hợp</a>
+                      <a href="/refactoring/techniques/organizing-data/encapsulate-collection">
+                        Đóng Gói Tập Hợp
+                      </a>
                     </li>
                     <li>
-                      <a href="/replace-magic-number-with-symbolic-constant">
+                      <a href="/refactoring/techniques/organizing-data/replace-magic-number-with-symbolic-constant">
                         Thay Thế Số Ma Thuật Bằng Hằng Số Tượng Trưng
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/replace-type-code-with-class">
+                      <a href="/refactoring/techniques/organizing-data/replace-type-code-with-class">
                         Thay Thế Mã Kiểu Bằng Lớp
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-type-code-with-subclasses">
+                      <a href="/refactoring/techniques/organizing-data/replace-type-code-with-subclasses">
                         Thay Thế Mã Kiểu Bằng Lớp Con
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-type-code-with-state-strategy">
+                      <a href="/refactoring/techniques/organizing-data/replace-type-code-with-state-strategy">
                         Thay Thế Mã Kiểu Bằng Trạng Thái/Chiến Lược
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-subclass-with-fields">
+                      <a href="/refactoring/techniques/organizing-data/replace-subclass-with-fields">
                         Thay Thế Lớp Con Bằng Trường
                       </a>
                     </li>
@@ -611,7 +649,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="simplifying-conditional-expressions">
-                  <a href="/techniques/simplifying-conditional-expressions">
+                  <a href="/refactoring/techniques/simplifying-conditional-expressions">
                     Đơn giản hóa biểu thức điều kiện
                   </a>
                 </h3>
@@ -625,42 +663,48 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/consolidate-conditional-expression">
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/consolidate-conditional-expression">
                         Hợp Nhất Biểu Thức Điều Kiện
                       </a>
                     </li>
                     <li>
-                      <a href="/consolidate-duplicate-conditional-fragments">
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/consolidate-duplicate-conditional-fragments">
                         Hợp Nhất Các Đoạn Mã Điều Kiện Trùng Lặp
                       </a>
                     </li>
                     <li>
-                      <a href="/decompose-conditional">Phân Rã Điều Kiện</a>
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/decompose-conditional">
+                        Phân Rã Điều Kiện
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/replace-conditional-with-polymorphism">
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/replace-conditional-with-polymorphism">
                         Thay Thế Điều Kiện Bằng Đa Hình
                       </a>
                     </li>
                     <li>
-                      <a href="/remove-control-flag">Loại Bỏ Cờ Điều Khiển</a>
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/remove-control-flag">
+                        Loại Bỏ Cờ Điều Khiển
+                      </a>
                     </li>
                     <li>
-                      <a href="/replace-nested-conditional-with-guard-clauses">
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/replace-nested-conditional-with-guard-clauses">
                         Thay thế điều kiện lồng nhau bằng mệnh đề bảo vệ
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/introduce-null-object">
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object">
                         Giới thiệu đối tượng null
                       </a>
                     </li>
                     <li>
-                      <a href="/introduce-assertion">Giới thiệu khẳng định</a>
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions/introduce-assertion">
+                        Giới thiệu khẳng định
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -685,7 +729,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="simplifying-method-calls">
-                  <a href="/techniques/simplifying-method-calls">
+                  <a href="/refactoring/techniques/simplifying-method-calls">
                     Đơn Giản Hóa Lời Gọi Phương Thức
                   </a>
                 </h3>
@@ -699,66 +743,76 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/add-parameter">Thêm Tham Số</a>
+                      <a href="/refactoring/techniques/simplifying-method-calls/add-parameter">
+                        Thêm Tham Số
+                      </a>
                     </li>
                     <li>
-                      <a href="/remove-parameter">Loại Bỏ Tham Số</a>
+                      <a href="/refactoring/techniques/simplifying-method-calls/remove-parameter">
+                        Loại Bỏ Tham Số
+                      </a>
                     </li>
                     <li>
-                      <a href="/rename-method">Đổi Tên Phương Thức</a>
+                      <a href="/refactoring/techniques/simplifying-method-calls/rename-method">
+                        Đổi Tên Phương Thức
+                      </a>
                     </li>
                     <li>
-                      <a href="/separate-query-from-modifier">
+                      <a href="/refactoring/techniques/simplifying-method-calls/separate-query-from-modifier">
                         Tách Truy Vấn Khỏi Bộ Sửa Đổi
                       </a>
                     </li>
                     <li>
-                      <a href="/parameterize-method">Tham Số Hóa Phương Thức</a>
+                      <a href="/refactoring/techniques/simplifying-method-calls/parameterize-method">
+                        Tham Số Hóa Phương Thức
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/introduce-parameter-object">
+                      <a href="/refactoring/techniques/simplifying-method-calls/introduce-parameter-object">
                         Giới Thiệu Đối Tượng Tham Số
                       </a>
                     </li>
                     <li>
-                      <a href="/preserve-whole-object">
+                      <a href="/refactoring/techniques/simplifying-method-calls/preserve-whole-object">
                         Bảo Toàn Toàn Bộ Đối Tượng
                       </a>
                     </li>
                     <li>
-                      <a href="/remove-setting-method">
+                      <a href="/refactoring/techniques/simplifying-method-calls/remove-setting-method">
                         Loại Bỏ Phương Thức Thiết Lập
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-parameter-with-explicit-methods">
+                      <a href="/refactoring/techniques/simplifying-method-calls/replace-parameter-with-explicit-methods">
                         Thay Thế Tham Số Bằng Các Phương Thức Rõ Ràng
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-parameter-with-method-call">
+                      <a href="/refactoring/techniques/simplifying-method-calls/replace-parameter-with-method-call">
                         Thay Thế Tham Số Bằng Lời Gọi Phương Thức
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/hide-method">Ẩn Phương Thức</a>
+                      <a href="/refactoring/techniques/simplifying-method-calls/hide-method">
+                        Ẩn Phương Thức
+                      </a>
                     </li>
                     <li>
-                      <a href="/replace-constructor-with-factory-method">
+                      <a href="/refactoring/techniques/simplifying-method-calls/replace-constructor-with-factory-method">
                         Thay Thế Hàm Tạo Bằng Phương Thức Factory
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-error-code-with-exception">
+                      <a href="/refactoring/techniques/simplifying-method-calls/replace-error-code-with-exception">
                         Thay Thế Mã Lỗi Bằng Ngoại Lệ
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-exception-with-test">
+                      <a href="/refactoring/techniques/simplifying-method-calls/replace-exception-with-test">
                         Thay Thế Ngoại Lệ Bằng Kiểm Tra
                       </a>
                     </li>
@@ -785,7 +839,7 @@ const ContentCatalog = () => {
               </div>
               <div className="cell-text">
                 <h3 id="dealing-with-generalization">
-                  <a href="/techniques/dealing-with-generalization">
+                  <a href="/refactoring/techniques/dealing-with-generalization">
                     Xử lý tính tổng quát hóa
                   </a>
                 </h3>
@@ -800,50 +854,66 @@ const ContentCatalog = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/pull-up-field">Kéo Trường Lên</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/pull-up-field">
+                        Kéo Trường Lên
+                      </a>
                     </li>
                     <li>
-                      <a href="/pull-up-method">Kéo Phương Thức Lên</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/pull-up-method">
+                        Kéo Phương Thức Lên
+                      </a>
                     </li>
                     <li>
-                      <a href="/pull-up-constructor-body">
+                      <a href="/refactoring/techniques/dealing-with-generalization/pull-up-constructor-body">
                         Kéo Nội Dung Hàm Tạo Lên
                       </a>
                     </li>
                     <li>
-                      <a href="/push-down-field">Đẩy Trường Xuống</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/push-down-field">
+                        Đẩy Trường Xuống
+                      </a>
                     </li>
                     <li>
-                      <a href="/push-down-method">Đẩy Phương Thức Xuống</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/push-down-method">
+                        Đẩy Phương Thức Xuống
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/extract-subclass">Trích Xuất Lớp Con</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/extract-subclass">
+                        Trích Xuất Lớp Con
+                      </a>
                     </li>
                     <li>
-                      <a href="/extract-superclass">Trích Xuất Lớp Cha</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/extract-superclass">
+                        Trích Xuất Lớp Cha
+                      </a>
                     </li>
                     <li>
-                      <a href="/extract-interface">Trích Xuất Giao Diện</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/extract-interface">
+                        Trích Xuất Giao Diện
+                      </a>
                     </li>
                     <li>
-                      <a href="/collapse-hierarchy">
+                      <a href="/refactoring/techniques/dealing-with-generalization/collapse-hierarchy">
                         Thu Gọn Hệ Thống Phân Cấp
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/form-template-method">Tạo Phương Thức Mẫu</a>
+                      <a href="/refactoring/techniques/dealing-with-generalization/form-template-method">
+                        Tạo Phương Thức Mẫu
+                      </a>
                     </li>
                     <li>
-                      <a href="/replace-inheritance-with-delegation">
+                      <a href="/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation">
                         Thay Thế Kế Thừa Bằng Ủy Quyền
                       </a>
                     </li>
                     <li>
-                      <a href="/replace-delegation-with-inheritance">
+                      <a href="/refactoring/techniques/dealing-with-generalization/replace-delegation-with-inheritance">
                         Thay Thế Ủy Quyền Bằng Kế Thừa
                       </a>
                     </li>

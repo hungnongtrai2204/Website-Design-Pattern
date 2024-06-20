@@ -82,7 +82,7 @@ const ContentDataClumps = () => {
                 <p>
                   Nếu dữ liệu lặp lại bao gồm các trường của một lớp, hãy sử
                   dụng{" "}
-                  <a href="/refactorings/moving-features-between-objects/extract-class">
+                  <a href="/refactoring/techniques/moving-features-between-objects/extract-class">
                     Tách Lớp
                   </a>{" "}
                   để di chuyển các trường này vào lớp riêng của chúng.
@@ -92,7 +92,7 @@ const ContentDataClumps = () => {
                 <p>
                   Nếu các cụm dữ liệu giống nhau được truyền vào tham số của các
                   phương thức, hãy sử dụng{" "}
-                  <a href="/refactorings/simplifying-method-calls/introduce-parameter-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/introduce-parameter-object">
                     Giới Thiệu Đối Tượng Tham Số
                   </a>{" "}
                   để tách chúng ra thành một lớp.
@@ -103,7 +103,7 @@ const ContentDataClumps = () => {
                   Nếu một số dữ liệu được truyền vào các phương thức khác, hãy
                   cân nhắc việc truyền toàn bộ đối tượng dữ liệu vào phương thức
                   thay vì chỉ truyền các trường riêng lẻ.{" "}
-                  <a href="/refactorings/simplifying-method-calls/preserve-whole-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/preserve-whole-object">
                     Bảo Tồn Toàn Bộ Đối Tượng
                   </a>{" "}
                   sẽ giúp thực hiện điều này.

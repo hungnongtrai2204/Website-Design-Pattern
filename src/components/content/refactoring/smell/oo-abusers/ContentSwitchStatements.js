@@ -82,11 +82,11 @@ const ContentSwitchStatements = () => {
                 <p>
                   Để tách biệt câu lệnh <code>switch</code> và đặt nó vào đúng
                   lớp, bạn có thể cần{" "}
-                  <a href="/refactorings/composing-methods/extract-method">
+                  <a href="/refactoring/techniques/composing-methods/extract-method">
                     Tách Phương Thức
                   </a>{" "}
                   và sau đó{" "}
-                  <a href="/refactorings/moving-features-between-objects/move-method">
+                  <a href="/refactoring/techniques/moving-features-between-objects/move-method">
                     Di Chuyển Phương Thức
                   </a>
                   .
@@ -97,11 +97,11 @@ const ContentSwitchStatements = () => {
                   Nếu một <code>switch</code> dựa trên mã kiểu, chẳng hạn như
                   khi chế độ chạy thời gian thực của chương trình được chuyển
                   đổi, hãy sử dụng{" "}
-                  <a href="/refactorings/organizing-data/replace-type-code-with-subclasses">
+                  <a href="/refactoring/techniques/organizing-data/replace-type-code-with-subclasses">
                     Thay Mã Kiểu bằng Lớp Con
                   </a>{" "}
                   hoặc{" "}
-                  <a href="/refactorings/organizing-data/replace-type-code-with-state-strategy">
+                  <a href="/refactoring/techniques/organizing-data/replace-type-code-with-state-strategy">
                     Thay Mã Kiểu bằng Trạng Thái/Chiến Lược
                   </a>
                   .
@@ -110,7 +110,7 @@ const ContentSwitchStatements = () => {
               <li>
                 <p>
                   Sau khi xác định cấu trúc kế thừa, hãy sử dụng{" "}
-                  <a href="/refactorings/simplifying-conditional-expressions/replace-conditional-with-polymorphism">
+                  <a href="/refactoring/techniques/simplifying-conditional-expressions/replace-conditional-with-polymorphism">
                     Thay Câu Điều Kiện bằng Tính Đa Hình
                   </a>
                   .
@@ -122,7 +122,7 @@ const ContentSwitchStatements = () => {
                   đều gọi cùng một phương thức với các tham số khác nhau, tính
                   đa hình sẽ trở nên thừa thãi. Trong trường hợp này, bạn có thể
                   chia phương thức đó thành nhiều phương thức nhỏ hơn với{" "}
-                  <a href="/refactorings/simplifying-method-calls/replace-parameter-with-explicit-methods">
+                  <a href="/refactoring/techniques/simplifying-method-calls/replace-parameter-with-explicit-methods">
                     Thay Tham Số Bằng Các Phương Thức Tường Minh
                   </a>{" "}
                   và thay đổi <code>switch</code> tương ứng.
@@ -132,7 +132,7 @@ const ContentSwitchStatements = () => {
                 <p>
                   Nếu một trong các tùy chọn điều kiện là <code>null</code>, hãy
                   sử dụng{" "}
-                  <a href="/refactorings/simplifying-conditional-expressions/introduce-null-object">
+                  <a href="/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object">
                     Giới Thiệu Đối Tượng Null
                   </a>
                   .

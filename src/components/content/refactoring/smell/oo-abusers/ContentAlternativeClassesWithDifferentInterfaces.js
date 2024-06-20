@@ -75,7 +75,7 @@ const ContentAlternativeClassesWithDifferentInterfaces = () => {
             <ul>
               <li>
                 <p>
-                  <a href="/refactorings/simplifying-method-calls/rename-method">
+                  <a href="/refactoring/techniques/simplifying-method-calls/rename-method">
                     Đổi Tên Phương Thức
                   </a>{" "}
                   để chúng giống nhau trong tất cả các lớp thay thế.
@@ -83,15 +83,15 @@ const ContentAlternativeClassesWithDifferentInterfaces = () => {
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/moving-features-between-objects/move-method">
+                  <a href="/refactoring/techniques/moving-features-between-objects/move-method">
                     Di Chuyển Phương Thức
                   </a>
                   ,{" "}
-                  <a href="/refactorings/simplifying-method-calls/add-parameter">
+                  <a href="/refactoring/techniques/simplifying-method-calls/add-parameter">
                     Thêm Tham Số
                   </a>{" "}
                   và{" "}
-                  <a href="/refactorings/simplifying-method-calls/parameterize-method">
+                  <a href="/refactoring/techniques/simplifying-method-calls/parameterize-method">
                     Tham Số Hóa Phương Thức
                   </a>{" "}
                   để làm cho chữ ký và triển khai của các phương thức giống
@@ -102,7 +102,7 @@ const ContentAlternativeClassesWithDifferentInterfaces = () => {
                 <p>
                   Nếu chỉ một phần chức năng của các lớp bị trùng lặp, hãy thử
                   sử dụng{" "}
-                  <a href="/refactorings/dealing-with-generalization/extract-superclass">
+                  <a href="/refactoring/techniques/dealing-with-generalization/extract-superclass">
                     Tách Lớp Cha
                   </a>
                   . Trong trường hợp này, các lớp hiện tại sẽ trở thành lớp con.

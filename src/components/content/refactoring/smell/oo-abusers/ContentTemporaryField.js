@@ -95,12 +95,12 @@ const ContentTemporaryField = () => {
                 <p>
                   Các trường tạm thời và tất cả mã nguồn thao tác trên chúng có
                   thể được đưa vào một lớp riêng biệt thông qua{" "}
-                  <a href="/refactorings/moving-features-between-objects/extract-class">
+                  <a href="/refactoring/techniques/moving-features-between-objects/extract-class">
                     Tách Lớp
                   </a>
                   . Nói cách khác, bạn đang tạo ra một đối tượng phương thức,
                   đạt được kết quả tương tự như khi bạn thực hiện{" "}
-                  <a href="/refactorings/composing-methods/replace-method-with-method-object">
+                  <a href="/refactoring/techniques/composing-methods/replace-method-with-method-object">
                     Thay Phương Thức bằng Đối Tượng Phương Thức
                   </a>
                   .
@@ -108,7 +108,7 @@ const ContentTemporaryField = () => {
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/simplifying-conditional-expressions/introduce-null-object">
+                  <a href="/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object">
                     Giới Thiệu Đối Tượng Null
                   </a>{" "}
                   và tích hợp nó thay cho mã điều kiện đã được sử dụng để kiểm

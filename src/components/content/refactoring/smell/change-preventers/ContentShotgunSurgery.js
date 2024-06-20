@@ -105,11 +105,11 @@ const ContentShotgunSurgery = () => {
               <li>
                 <p>
                   Sử dụng{" "}
-                  <a href="/refactorings/moving-features-between-objects/move-method">
+                  <a href="/refactoring/techniques/moving-features-between-objects/move-method">
                     Di Chuyển Phương Thức
                   </a>{" "}
                   và{" "}
-                  <a href="/refactorings/moving-features-between-objects/move-field">
+                  <a href="/refactoring/techniques/moving-features-between-objects/move-field">
                     Di Chuyển Trường
                   </a>{" "}
                   để di chuyển các hành vi của lớp hiện có vào một lớp duy nhất.
@@ -122,7 +122,7 @@ const ContentShotgunSurgery = () => {
                   Nếu việc di chuyển mã vào cùng một lớp khiến các lớp ban đầu
                   gần như trống rỗng, hãy cố gắng loại bỏ những lớp dư thừa này
                   bằng cách{" "}
-                  <a href="/refactorings/moving-features-between-objects/inline-class">
+                  <a href="/refactoring/techniques/moving-features-between-objects/inline-class">
                     Sát Nhập Lớp
                   </a>
                   .

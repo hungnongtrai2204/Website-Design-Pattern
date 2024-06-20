@@ -114,7 +114,7 @@ const ContentPrimitiveObsession = () => {
                   logic một số trong chúng vào lớp riêng của chúng. Thậm chí tốt
                   hơn, hãy di chuyển hành vi liên quan đến dữ liệu này vào lớp
                   đó. Đối với nhiệm vụ này, hãy thử sử dụng{" "}
-                  <a href="/refactorings/organizing-data/replace-data-value-with-object">
+                  <a href="/refactoring/techniques/organizing-data/replace-data-value-with-object">
                     Thay thế Giá trị Dữ liệu bằng Đối tượng
                   </a>
                   .
@@ -135,11 +135,11 @@ const ContentPrimitiveObsession = () => {
                 <p>
                   Nếu các giá trị của các trường nguyên thủy được sử dụng trong
                   tham số phương thức, hãy sử dụng{" "}
-                  <a href="/refactorings/simplifying-method-calls/introduce-parameter-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/introduce-parameter-object">
                     Giới thiệu Đối tượng Tham số
                   </a>{" "}
                   hoặc{" "}
-                  <a href="/refactorings/simplifying-method-calls/preserve-whole-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/preserve-whole-object">
                     Bảo tồn Toàn bộ Đối tượng
                   </a>
                   .
@@ -148,15 +148,15 @@ const ContentPrimitiveObsession = () => {
               <li>
                 <p>
                   Khi dữ liệu phức tạp được mã hóa trong các biến, hãy sử dụng{" "}
-                  <a href="/refactorings/organizing-data/replace-type-code-with-class">
+                  <a href="/refactoring/techniques/organizing-data/replace-type-code-with-class">
                     Thay thế Mã Kiểu bằng Lớp
                   </a>
                   ,{" "}
-                  <a href="/refactorings/organizing-data/replace-type-code-with-subclasses">
+                  <a href="/refactoring/techniques/organizing-data/replace-type-code-with-subclasses">
                     Thay thế Mã Kiểu bằng Lớp Con
                   </a>{" "}
                   hoặc{" "}
-                  <a href="/refactorings/organizing-data/replace-type-code-with-state-strategy">
+                  <a href="/refactoring/techniques/organizing-data/replace-type-code-with-state-strategy">
                     Thay thế Mã Kiểu bằng Trạng thái/Chiến lược
                   </a>
                   .
@@ -165,7 +165,7 @@ const ContentPrimitiveObsession = () => {
               <li>
                 <p>
                   Nếu có các mảng trong số các biến, hãy sử dụng{" "}
-                  <a href="/refactorings/organizing-data/replace-array-with-object">
+                  <a href="/refactoring/techniques/organizing-data/replace-array-with-object">
                     Thay thế Mảng bằng Đối tượng
                   </a>
                   .

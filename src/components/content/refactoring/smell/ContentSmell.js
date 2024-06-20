@@ -115,26 +115,26 @@ const ContentSmell = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/alternative-classNamees-with-different-interfaces">
+                      <a href="/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces">
                         Các Lớp Thay Thế Với Giao Diện Khác Nhau
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/refused-bequest">
+                      <a href="/refactoring/smells/oo-abusers/refused-bequest">
                         Từ Chối Thừa Kế
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/switch-statements">
+                      <a href="/refactoring/smells/oo-abusers/switch-statements">
                         Câu Lệnh Switch
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/temporary-field">
+                      <a href="/refactoring/smells/oo-abusers/temporary-field">
                         Trường Tạm Thời
                       </a>
                     </li>
@@ -174,21 +174,21 @@ const ContentSmell = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/divergent-change">
+                      <a href="/refactoring/smells/change-preventers/divergent-change">
                         Thay Đổi Phân Kỳ
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/parallel-inheritance-hierarchies">
+                      <a href="/refactoring/smells/change-preventers/parallel-inheritance-hierarchies">
                         Cấu Trúc Kế Thừa Song Song
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/shotgun-surgery">
+                      <a href="/refactoring/smells/change-preventers/shotgun-surgery">
                         Phẫu Thuật Bằng Súng Săn
                       </a>
                     </li>
@@ -226,30 +226,36 @@ const ContentSmell = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/comments">Chú Thích</a>
+                      <a href="/refactoring/smells/dispensables/comments">
+                        Chú Thích
+                      </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/duplicate-code">
+                      <a href="/refactoring/smells/dispensables/duplicate-code">
                         Mã Trùng Lặp
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/data-class">Lớp Dữ Liệu</a>
+                      <a href="/refactoring/smells/dispensables/data-class">
+                        Lớp Dữ Liệu
+                      </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/dead-code">Mã Chết</a>
+                      <a href="/refactoring/smells/dispensables/dead-code">
+                        Mã Chết
+                      </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/lazy-class">
+                      <a href="/refactoring/smells/dispensables/lazy-class">
                         Lớp Lười Biếng
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/speculative-generality">
+                      <a href="/refactoring/smells/dispensables/speculative-generality">
                         Tính Tổng Quát Phỏng Đoán
                       </a>
                     </li>
@@ -292,31 +298,31 @@ const ContentSmell = () => {
                 <div className="catalog-list">
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/feature-envy">
+                      <a href="/refactoring/smells/couplers/feature-envy">
                         Ganh Tỵ Tính Năng
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/inappropriate-intimacy">
+                      <a href="/refactoring/smells/couplers/inappropriate-intimacy">
                         Quan Hệ Quá Gần Gũi
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/incomplete-library-class">
+                      <a href="/refactoring/smells/couplers/incomplete-library-class">
                         Lớp Thư Viện Không Hoàn Chỉnh
                       </a>
                     </li>
                     <li>
-                      <a href="/refactoring/smells/message-chains">
+                      <a href="/refactoring/smells/couplers/message-chains">
                         Chuỗi Thông Điệp
                       </a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/refactoring/smells/middle-man">
+                      <a href="/refactoring/smells/couplers/middle-man">
                         Người Trung Gian
                       </a>
                     </li>

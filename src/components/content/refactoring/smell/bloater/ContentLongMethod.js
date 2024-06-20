@@ -118,11 +118,11 @@ const ContentLongMethod = () => {
                     Thay Thế Biến Tạm Bằng Truy Vấn
                   </a>
                   ,{" "}
-                  <a href="/refactorings/simplifying-method-calls/introduce-parameter-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/introduce-parameter-object">
                     Giới Thiệu Đối Tượng Tham Số
                   </a>{" "}
                   hoặc{" "}
-                  <a href="/refactorings/simplifying-method-calls/preserve-whole-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/preserve-whole-object">
                     Bảo Toàn Toàn Bộ Đối Tượng
                   </a>
                   .
@@ -132,7 +132,7 @@ const ContentLongMethod = () => {
                 <p>
                   Nếu các cách trên không hiệu quả, hãy thử chuyển toàn bộ
                   phương thức sang một đối tượng riêng biệt bằng kỹ thuật{" "}
-                  <a href="/refactorings/composing-method/replace-method-with-method-object.html">
+                  <a href="/refactorings/composing-method/replace-method-with-method-object">
                     Thay Thế Phương Thức Bằng Đối Tượng Phương Thức
                   </a>
                   .
@@ -143,7 +143,7 @@ const ContentLongMethod = () => {
                   Các toán tử điều kiện và vòng lặp thường là dấu hiệu cho thấy
                   mã có thể được chuyển sang phương thức riêng biệt. Với câu
                   lệnh điều kiện, sử dụng{" "}
-                  <a href="/refactorings/simplifying-method-calls/decompose-conditional">
+                  <a href="/refactoring/techniques/simplifying-method-calls/decompose-conditional">
                     Phân Rã Điều Kiện
                   </a>
                   . Nếu vòng lặp cản trở, sử dụng{" "}

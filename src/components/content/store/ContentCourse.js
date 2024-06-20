@@ -1274,8 +1274,8 @@ const ContentCourse = () => {
                   <div className="feedback">
                     <p>
                       I'm very happy with the course! I had a chance to go
-                      through the different refactorings and now I am working on
-                      the design patterns.
+                      through the different refactoring/smells and now I am
+                      working on the design patterns.
                     </p>
                   </div>
                   <div className="feedback-details">
@@ -1429,10 +1429,10 @@ const ContentCourse = () => {
                   <div className="feedback">
                     <p>
                       I have tried the course. I have now unlocked the topic
-                      "Refactorings". And here's the main and only issue I have
-                      with the course - I have no idea how much I've got left to
-                      complete. The only suggestion about improving the course I
-                      can give you so far is, let me know how much I've
+                      "refactoring/smells". And here's the main and only issue I
+                      have with the course - I have no idea how much I've got
+                      left to complete. The only suggestion about improving the
+                      course I can give you so far is, let me know how much I've
                       completed or how much I have left. I honestly don't know
                       if I'm currently at 20% or 92%.
                     </p>

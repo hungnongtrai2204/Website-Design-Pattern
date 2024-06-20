@@ -24,7 +24,7 @@ const ContentRefactoring = () => {
             <h1 className="ref1-h ref-abs ref-c ref-h1">Tái Cấu Trúc</h1>
             <div className="mob-image">
               <a
-                href="refactoring/what-is-refactoring.html"
+                href="/refactoring/what-is-refactoring"
                 title="Вступление в Рефакторинг"
               >
                 <img
@@ -52,7 +52,7 @@ const ContentRefactoring = () => {
             <div className="ref1-b ref-abs ref-c ref-b">
               <span>
                 <a
-                  href="refactoring/what-is-refactoring.html"
+                  href="/refactoring/what-is-refactoring"
                   className="btn btn-primary"
                 >
                   <i className="fa fa-hand-o-right" aria-hidden="true"></i> Bắt
@@ -65,7 +65,7 @@ const ContentRefactoring = () => {
               <i className="fa fa-trash-alt" aria-hidden="true"></i> Mã Bẩn
             </h3>
             <div className="mob-image">
-              <a href="refactoring/technical-debt.html" title="Грязный код">
+              <a href="/refactoring/technical-debt" title="Грязный код">
                 <img
                   width="256"
                   height="192"
@@ -88,7 +88,7 @@ const ContentRefactoring = () => {
             <div className="ref2-b ref-abs ref-l ref-b">
               <span>
                 <a
-                  href="refactoring/technical-debt.html"
+                  href="/refactoring/technical-debt"
                   className="btn btn-primary"
                 >
                   Tìm Hiểu Thêm
@@ -100,7 +100,7 @@ const ContentRefactoring = () => {
               <i className="fa fa-bath" aria-hidden="true"></i> Mã Sạch
             </h3>
             <div className="mob-image">
-              <a href="refactoring/what-is-refactoring.html" title="Чистый код">
+              <a href="/refactoring/what-is-refactoring" title="Чистый код">
                 <img
                   width="256"
                   height="192"
@@ -122,7 +122,7 @@ const ContentRefactoring = () => {
             <div className="ref3-b ref-abs ref-r ref-b">
               <span>
                 <a
-                  href="refactoring/what-is-refactoring.html"
+                  href="/refactoring/what-is-refactoring"
                   className="btn btn-primary"
                 >
                   Tìm Hiểu Thêm
@@ -136,7 +136,7 @@ const ContentRefactoring = () => {
               Quá Trình Tái Cấu Trúc
             </h3>
             <div className="mob-image">
-              <a href="refactoring/how-to.html" title="Процесс рефакторинга">
+              <a href="/refactoring/how-to" title="Процесс рефакторинга">
                 <img
                   width="256"
                   height="192"
@@ -157,7 +157,7 @@ const ContentRefactoring = () => {
             </p>
             <div className="ref4-b ref-abs ref-c ref-b">
               <span>
-                <a href="refactoring/how-to.html" className="btn btn-primary">
+                <a href="/refactoring/how-to" className="btn btn-primary">
                   Tìm Hiểu Thêm
                 </a>
               </span>
@@ -167,7 +167,7 @@ const ContentRefactoring = () => {
               <i className="fa fa-ghost" aria-hidden="true"></i> Mùi Mã
             </h3>
             <div className="mob-image">
-              <a href="refactoring/smells.html" title="Запахи кода">
+              <a href="/refactoring/smells" title="Запахи кода">
                 <img
                   width="256"
                   height="192"
@@ -189,7 +189,7 @@ const ContentRefactoring = () => {
             </p>
             <div className="ref5-b ref-abs ref-l ref-b">
               <span>
-                <a href="refactoring/smells.html" className="btn btn-primary">
+                <a href="/refactoring/smells" className="btn btn-primary">
                   Tìm Hiểu Thêm
                 </a>
               </span>
@@ -200,10 +200,7 @@ const ContentRefactoring = () => {
               Thuật Tái Cấu Trúc
             </h3>
             <div className="mob-image">
-              <a
-                href="refactoring/techniques.html"
-                title="Техники рефакторинга"
-              >
+              <a href="/refactoring/techniques" title="Техники рефакторинга">
                 <img
                   width="256"
                   height="192"
@@ -225,10 +222,7 @@ const ContentRefactoring = () => {
             </p>
             <div className="ref6-b ref-abs ref-r ref-b">
               <span>
-                <a
-                  href="refactoring/techniques.html"
-                  className="btn btn-primary"
-                >
+                <a href="/refactoring/techniques" className="btn btn-primary">
                   Tìm Hiểu Thêm
                 </a>
               </span>
@@ -250,7 +244,7 @@ const ContentRefactoring = () => {
               </h3>
 
               <div className="mob-image">
-                <a href="refactoring/course.html" title="Курс рефакторинга">
+                <a href="/store/course" title="Курс рефакторинга">
                   <img
                     width="256"
                     height="192"
@@ -269,20 +263,14 @@ const ContentRefactoring = () => {
               </p>
               <div className="ref7-b ref-abs ref-c ref-b">
                 <span>
-                  <a
-                    href="refactoring/course.html"
-                    className="btn btn-secondary"
-                  >
+                  <a href="/store/course" className="btn btn-secondary">
                     <i className="fa fa-star" aria-hidden="true"></i> Tìm hiểu
                     thêm về khóa học
                   </a>
                 </span>
               </div>
               <div className="ref7-abs-link-holder ref-abs">
-                <a
-                  href="refactoring/course.html"
-                  className="ref7-abs-link ref-abs"
-                ></a>
+                <a href="/store/course" className="ref7-abs-link ref-abs"></a>
               </div>
             </div>
           </div>

@@ -93,7 +93,7 @@ const ContentLargeClass = () => {
             <ul>
               <li>
                 <p>
-                  <a href="/refactorings/moving-features-between-objects/extract-class">
+                  <a href="/refactoring/techniques/moving-features-between-objects/extract-class">
                     Trích Xuất Lớp
                   </a>{" "}
                   hữu ích nếu một phần hành vi của lớp lớn có thể được tách ra
@@ -102,7 +102,7 @@ const ContentLargeClass = () => {
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/dealing-with-generalization/extract-subclass">
+                  <a href="/refactoring/techniques/dealing-with-generalization/extract-subclass">
                     Trích Xuất Lớp Con
                   </a>{" "}
                   hữu ích nếu một phần hành vi của lớp lớn có thể được thực hiện
@@ -112,7 +112,7 @@ const ContentLargeClass = () => {
               </li>
               <li>
                 <p>
-                  <a href="/refactorings/dealing-with-generalization/extract-interface">
+                  <a href="/refactoring/techniques/dealing-with-generalization/extract-interface">
                     Trích Xuất Giao Diện
                   </a>{" "}
                   hữu ích nếu cần có một danh sách các hoạt động và hành vi mà
@@ -126,7 +126,7 @@ const ContentLargeClass = () => {
                   tượng miền riêng biệt. Khi làm như vậy, có thể cần phải lưu
                   trữ các bản sao của một số dữ liệu ở hai nơi và giữ cho dữ
                   liệu nhất quán. Kỹ thuật{" "}
-                  <a href="/refactorings/organizing-data/duplicate-observed-data">
+                  <a href="/refactoring/techniques/organizing-data/duplicate-observed-data">
                     Sao Chép Dữ Liệu Quan Sát
                   </a>{" "}
                   cung cấp một cách để làm điều này.

@@ -457,256 +457,649 @@ const Sidebar = () => {
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/smells/comments.html"> Комментарии </a>
-                        </li>
-                        <li className="">
-                          <a href="ru/smells/duplicate-code.html">
-                            Дублирование кода
+                        <li
+                          className={
+                            location.pathname.includes("comments")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/dispensables/comments">
+                            {" "}
+                            Nhận Xét{" "}
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/lazy-className.html">
-                            Ленивый класс
+                        <li
+                          className={
+                            location.pathname.includes("duplicate-code")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/dispensables/duplicate-code">
+                            Mã Nguồn Trùng Lặp
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/data-className.html">
-                            Класс данных
+                        <li
+                          className={
+                            location.pathname.includes("lazy-class")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/dispensables/lazy-class">
+                            Lớp Lười Biếng
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/dead-code.html"> Мёртвый код </a>
+                        <li
+                          className={
+                            location.pathname.includes("data-class")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/dispensables/data-class">
+                            Lớp Dữ Liệu
+                          </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/speculative-generality.html">
-                            Теоретическая общность
+                        <li
+                          className={
+                            location.pathname.includes("dead-code")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/dispensables/dead-code">
+                            {" "}
+                            Mã Chết
+                          </a>
+                        </li>
+                        <li
+                          className={
+                            location.pathname.includes("speculative-generality")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/dispensables/speculative-generality">
+                            Tổng Quát Hóa Đầu Cơ
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
+                    <li
+                      className={
+                        location.pathname.includes("couplers")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/smells/couplers"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
                       <a href="/refactoring/smells/couplers">
                         Các Yếu Tố Liên Kết Quá Mức
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/smells/feature-envy.html">
-                            Завистливые функции
+                        <li
+                          className={
+                            location.pathname.includes("feature-envy")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/couplers/feature-envy">
+                            Thèm Khát Tính Năng
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/inappropriate-intimacy.html">
-                            Неуместная близость
+                        <li
+                          className={
+                            location.pathname.includes("inappropriate-intimacy")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/couplers/inappropriate-intimacy">
+                            Thân Mật Không Thích Hợp
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/message-chains.html">
-                            Цепочка вызовов
+                        <li
+                          className={
+                            location.pathname.includes("message-chains")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/couplers/message-chains">
+                            Chuỗi Thông Điệp
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/smells/middle-man.html"> Посредник </a>
+                        <li
+                          className={
+                            location.pathname.includes("middle-man")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/couplers/middle-man">
+                            {" "}
+                            Người Trung Gian{" "}
+                          </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
+                    <li
+                      className={
+                        location.pathname.includes("other")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname == "/refactoring/smells/other"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
                       <a href="/refactoring/smells/other">Các Mùi Mã Khác</a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/smells/incomplete-library-className.html">
-                            Неполнота библиотечного класса
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "incomplete-library-class"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/smells/other/incomplete-library-class">
+                            Lớp Thư Viện Không Hoàn Chỉnh
                           </a>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
-                <li className="">
-                  <a href="ru/refactoring/techniques.html"> Tái cấu trúc </a>
+                <li
+                  className={
+                    location.pathname.includes("techniques")
+                      ? `featured menu-fs15 trail ${
+                          location.pathname == "/refactoring/techniques"
+                            ? "active"
+                            : ""
+                        }`
+                      : "featured menu-fs15"
+                  }
+                >
+                  <a href="/refactoring/techniques"> Tái cấu trúc </a>
 
                   <ul>
-                    <li className="">
-                      <a href="ru/refactoring/techniques/composing-methods.html">
-                        Составление методов
+                    <li
+                      className={
+                        location.pathname.includes("composing-methods")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/techniques/composing-methods"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
+                      <a href="/refactoring/techniques/composing-methods">
+                        Sắp Xếp Phương Thức
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/extract-method.html">Извлечение метода</a>
-                        </li>
-                        <li className="">
-                          <a href="ru/inline-method.html">Встраивание метода</a>
-                        </li>
-                        <li className="">
-                          <a href="ru/extract-variable.html">
-                            Извлечение переменной
+                        <li
+                          className={
+                            location.pathname.includes("extract-method")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/extract-method">
+                            Trích Xuất Phương Thức
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/inline-temp.html">
-                            Встраивание переменной
+                        <li
+                          className={
+                            location.pathname.includes("inline-method")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/inline-method">
+                            Gộp Phương Thức
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-temp-with-query.html">
-                            Замена переменной вызовом метода
+                        <li
+                          className={
+                            location.pathname.includes("extract-variable")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/extract-variable">
+                            Trích Xuất Biến
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/split-temporary-variable.html">
-                            Расщепление переменной
+                        <li
+                          className={
+                            location.pathname.includes("inline-temp")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/inline-temp">
+                            Gộp Biến Tạm
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/remove-assignments-to-parameters.html">
-                            Удаление присваиваний параметрам
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-temp-with-query"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/replace-temp-with-query">
+                            Thay Thế Biến Tạm Bằng Truy Vấn
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-method-with-method-object.html">
-                            Замена метода объектом методов
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "split-temporary-variable"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/split-temporary-variable">
+                            Chia Biến Tạm Thời
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/substitute-algorithm.html">
-                            Замена алгоритма
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "remove-assignments-to-parameters"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/remove-assignments-to-parameters">
+                            Loại Bỏ Gán Giá Trị Cho Tham Số
+                          </a>
+                        </li>
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-method-with-method-object"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/replace-method-with-method-object">
+                            Thay Thế Phương Thức Bằng Đối Tượng Phương Thức
+                          </a>
+                        </li>
+                        <li
+                          className={
+                            location.pathname.includes("substitute-algorithm")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/composing-methods/substitute-algorithm">
+                            Thay Thế Thuật Toán
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
-                      <a href="ru/refactoring/techniques/moving-features-between-objects.html">
-                        Перемещение функций между объектами
+                    <li
+                      className={
+                        location.pathname.includes(
+                          "moving-features-between-objects"
+                        )
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/techniques/moving-features-between-objects"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
+                      <a href="/refactoring/techniques/moving-features-between-objects">
+                        Di Chuyển Chức Năng Giữa Các Đối Tượng
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/move-method.html">Перемещение метода</a>
-                        </li>
-                        <li className="">
-                          <a href="ru/move-field.html"> Перемещение поля </a>
-                        </li>
-                        <li className="">
-                          <a href="ru/extract-className.html">
-                            Извлечение класса
+                        <li
+                          className={
+                            location.pathname.includes("move-method")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/move-method">
+                            Di Chuyển Phương Thức
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/inline-className.html">
-                            Встраивание класса
+                        <li
+                          className={
+                            location.pathname.includes("move-field")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/move-field">
+                            {" "}
+                            Di Chuyển Trường{" "}
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/hide-delegate.html">
-                            Сокрытие делегирования
+                        <li
+                          className={
+                            location.pathname.includes("extract-class")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/extract-class">
+                            Trích Xuất Lớp
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/remove-middle-man.html">
-                            Удаление посредника
+                        <li
+                          className={
+                            location.pathname.includes("inline-class")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/inline-class">
+                            Lồng Lớp
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/introduce-foreign-method.html">
-                            Введение внешнего метода
+                        <li
+                          className={
+                            location.pathname.includes("hide-delegate")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/hide-delegate">
+                            Ẩn Đại Diện
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/introduce-local-extension.html">
-                            Введение локального расширения
+                        <li
+                          className={
+                            location.pathname.includes("remove-middle-man")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/remove-middle-man">
+                            Xóa Trung Gian
+                          </a>
+                        </li>
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "introduce-foreign-method"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/introduce-foreign-method">
+                            Giới Thiệu Phương Thức Ngoại Lai
+                          </a>
+                        </li>
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "introduce-local-extension"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/moving-features-between-objects/introduce-local-extension">
+                            Giới Thiệu Mở Rộng Địa Phương
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
-                      <a href="ru/refactoring/techniques/organizing-data.html">
-                        Организация данных
+                    <li
+                      className={
+                        location.pathname.includes("organizing-data")
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/techniques/organizing-data"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
+                      <a href="/refactoring/techniques/organizing-data">
+                        Tổ Chức Dữ Liệu
                       </a>
 
                       <ul>
-                        <li className="">
-                          <a href="ru/self-encapsulate-field.html">
-                            Самоинкапсуляция поля
+                        <li
+                          className={
+                            location.pathname.includes("self-encapsulate-field")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/self-encapsulate-field">
+                            Tự Bao Gói Trường
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-data-value-with-object.html">
-                            Замена простого поля объектом
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-data-value-with-object"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-data-value-with-object">
+                            Thay Giá Trị Dữ Liệu Bằng Đối Tượng
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/change-value-to-reference.html">
-                            Замена значения ссылкой
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "change-value-to-reference"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/change-value-to-reference">
+                            Thay Đổi Giá Trị Thành Tham Chiếu
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/change-reference-to-value.html">
-                            Замена ссылки значением
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "change-reference-to-value"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/change-reference-to-value">
+                            Thay Đổi Tham Chiếu Thành Giá Trị
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-array-with-object.html">
-                            Замена поля-массива объектом
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-array-with-object"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-array-with-object">
+                            Thay Mảng Bằng Đối Tượng
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/duplicate-observed-data.html">
-                            Дублирование видимых данных
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "duplicate-observed-data"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/duplicate-observed-data">
+                            Nhân Đôi Dữ Liệu Quan Sát
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/change-unidirectional-association-to-bidirectional.html">
-                            Замена однонаправленной связи двунаправленной
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "change-unidirectional-association-to-bidirectional"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/change-unidirectional-association-to-bidirectional">
+                            Thay Đổi Liên Kết Một Chiều Thành Hai Chiều
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/change-bidirectional-association-to-unidirectional.html">
-                            Замена двунаправленной связи однонаправленной
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "change-bidirectional-association-to-unidirectional"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/change-bidirectional-association-to-unidirectional">
+                            Thay Đổi Liên Kết Hai Chiều Thành Một Chiều
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-magic-number-with-symbolic-constant.html">
-                            Замена магического числа символьной константой
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-magic-number-with-symbolic-constant"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-magic-number-with-symbolic-constant">
+                            Thay Số Ma Thuật Bằng Hằng Số Ký Hiệu
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/encapsulate-field.html">
-                            Инкапсуляция поля
+                        <li
+                          className={
+                            location.pathname.includes("encapsulate-field")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/encapsulate-field">
+                            Bao Gói Trường
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/encapsulate-collection.html">
-                            Инкапсуляция коллекции
+                        <li
+                          className={
+                            location.pathname.includes("encapsulate-collection")
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/encapsulate-collection">
+                            Bao Gói Bộ Sưu Tập
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-type-code-with-className.html">
-                            Замена кодирования типа классом
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-type-code-with-class"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-type-code-with-class">
+                            Thay Mã Loại Bằng Lớp
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-type-code-with-subclassNamees.html">
-                            Замена кодирования типа подклассами
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-type-code-with-subclasses"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-type-code-with-subclasses">
+                            Thay Mã Loại Bằng Các Lớp Con
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-type-code-with-state-strategy.html">
-                            Замена кодирования типа состоянием/стратегией
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-type-code-with-state-strategy"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-type-code-with-state-strategy">
+                            Thay Mã Loại Bằng Trạng Thái/Chiến Lược
                           </a>
                         </li>
-                        <li className="">
-                          <a href="ru/replace-subclassName-with-fields.html">
-                            Замена подкласса полями
+                        <li
+                          className={
+                            location.pathname.includes(
+                              "replace-subclass-with-fields"
+                            )
+                              ? "featured menu-fs15 trail active"
+                              : "featured menu-fs15"
+                          }
+                        >
+                          <a href="/refactoring/techniques/organizing-data/replace-subclass-with-fields">
+                            Thay Lớp Con Bằng Các Trường
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li className="">
-                      <a href="ru/refactoring/techniques/simplifying-conditional-expressions.html">
-                        Упрощение условных выражений
+                    <li
+                      className={
+                        location.pathname.includes(
+                          "simplifying-conditional-expressions"
+                        )
+                          ? `featured menu-fs15 trail ${
+                              location.pathname ==
+                              "/refactoring/techniques/simplifying-conditional-expressions"
+                                ? "active"
+                                : ""
+                            }`
+                          : "featured menu-fs15"
+                      }
+                    >
+                      <a href="/refactoring/techniques/simplifying-conditional-expressions">
+                        Đơn giản hóa biểu thức điều kiện
                       </a>
 
                       <ul>

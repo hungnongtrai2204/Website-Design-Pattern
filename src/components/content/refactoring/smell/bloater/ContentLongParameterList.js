@@ -95,7 +95,7 @@ const ContentLongParameterList = () => {
                   Kiểm tra các giá trị được truyền vào tham số. Nếu một số đối
                   số chỉ là kết quả của các lời gọi phương thức của đối tượng
                   khác, hãy sử dụng{" "}
-                  <a href="/refactorings/simplifying-method-calls/replace-parameter-with-method-call">
+                  <a href="/refactoring/techniques/simplifying-method-calls/replace-parameter-with-method-call">
                     Thay Tham Số Bằng Lời Gọi Phương Thức
                   </a>
                   . Đối tượng này có thể được đặt trong trường của lớp riêng của
@@ -107,7 +107,7 @@ const ContentLongParameterList = () => {
                   Thay vì truyền một nhóm dữ liệu nhận được từ đối tượng khác
                   dưới dạng tham số, hãy truyền đối tượng đó vào phương thức
                   bằng cách sử dụng{" "}
-                  <a href="/refactorings/simplifying-method-calls/preserve-whole-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/preserve-whole-object">
                     Bảo Tồn Toàn Bộ Đối Tượng
                   </a>
                   .
@@ -118,7 +118,7 @@ const ContentLongParameterList = () => {
                   Nhưng nếu các tham số này đến từ các nguồn khác nhau, bạn có
                   thể truyền chúng như một đối tượng tham số duy nhất bằng cách
                   sử dụng{" "}
-                  <a href="/refactorings/simplifying-method-calls/introduce-parameter-object">
+                  <a href="/refactoring/techniques/simplifying-method-calls/introduce-parameter-object">
                     Giới Thiệu Đối Tượng Tham Số
                   </a>
                   .

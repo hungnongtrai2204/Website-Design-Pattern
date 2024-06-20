@@ -79,11 +79,11 @@ const ContentParallelInheritanceHierarchies = () => {
                 hệ thống phân cấp tham chiếu đến các thể hiện của hệ thống phân
                 cấp khác. Sau đó, loại bỏ hệ thống phân cấp trong lớp được tham
                 chiếu, bằng cách sử dụng{" "}
-                <a href="/refactorings/moving-features-between-objects/move-method">
+                <a href="/refactoring/techniques/moving-features-between-objects/move-method">
                   Di Chuyển Phương Thức
                 </a>{" "}
                 và{" "}
-                <a href="/refactorings/moving-features-between-objects/move-field">
+                <a href="/refactoring/techniques/moving-features-between-objects/move-field">
                   Di Chuyển Trường
                 </a>
                 .
@@ -209,26 +209,23 @@ const ContentParallelInheritanceHierarchies = () => {
           >
             <div class="ban">
               <div class="image product-image">
-                <span class="banner-discount">Скидки!</span>
-                <a href="../refactoring/course.html">
+                <span class="banner-discount">SALE!</span>
+                <a href="/store/course">
                   <img
                     width="300"
                     height="300"
                     loading="lazy"
-                    src="../../images/refactoring/course/course-cover-rua60d.jpg?id=e9d6b4015f4c6c48cf06f7479874d8d7"
+                    src="/images/refactoring/course/course-cover-en1b63.jpg?id=e9d6b4015f4c6c48cf06f7479874d8d7"
                   />
                 </a>
               </div>
               <div class="banner-text banner-text-ru">
                 <p class="text-center">
-                  Этот запах кода — малая часть интерактивного
-                  <b>онлайн курса по рефакторингу</b>.
+                  Mùi mã này là một phần của <b>Khóa Học Tái Cấu Trúc</b> lớn
+                  hơn nhiều.
                 </p>
-                <a
-                  href="../refactoring/course.html"
-                  class="btn btn-secondary btn-block"
-                >
-                  <i class="fa fa-star" aria-hidden="true"></i> Узнать больше…
+                <a href="/store/course" class="btn btn-secondary btn-block">
+                  <i class="fa fa-star" aria-hidden="true"></i> Tìm hiểu thêm...
                 </a>
               </div>
             </div>
